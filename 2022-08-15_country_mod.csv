@@ -1,0 +1,770 @@
+ISOCODE,ISO,ISO3,NAME,CONTINENT,GEONAMEID,STATE_NAME,SIMPLIFIED_NAME,ISO_STATE
+74,BV,BVT,Bouvet Island,AN,3371123,The Kingdom of Norway,Norway,NO
+578,NO,NOR,The Kingdom of Norway,EU,3144096,The Kingdom of Norway,Norway,NO
+744,SJ,SJM,The Kingdom of Norway,EU,607072,The Kingdom of Norway,Norway,NO
+682,SA,SAU,Saudi Arabia,AS,102358,The Kingdom of Saudi Arabia,Saudi Arabia,SA
+682,SA,SAU,The Kingdom of Saudi Arabia,AS,102358,The Kingdom of Saudi Arabia,Saudi Arabia,SA
+724,ES,ESP,Spain,EU,2510769,The Kingdom of Spain,Spain,ES
+724,ES,ESP,The Kingdom of Spain,EU,2510769,The Kingdom of Spain,Spain,ES
+752,SE,SWE,The Kingdom of Sweden,EU,2661886,The Kingdom of Sweden,Sweden,SE
+752,SE,SWE,Sweden,EU,2661886,The Kingdom of Sweden,Sweden,SE
+764,TH,THA,Thailand,AS,1605651,The Kingdom of Thailand,Thailand,TH
+764,TH,THA,The Kingdom of Thailand,AS,1605651,The Kingdom of Thailand,Thailand,TH
+776,TO,TON,Tonga,OC,4032283,The Kingdom of Tonga,Tonga,TO
+776,TO,TON,The Kingdom of Tonga,OC,4032283,The Kingdom of Tonga,Tonga,TO
+534,SX,SXM,The Kingdom of the Netherlands,NA,7609695,The Kingdom of the Netherlands,Netherlands,NL
+530,AN,ANT,The Kingdom of the Netherlands,NA,8505032,The Kingdom of the Netherlands,Netherlands,NL
+533,AW,ABW,Aruba,NA,3577279,The Kingdom of the Netherlands,Netherlands,NL
+535,BQ,BES,"Bonaire, Saint Eustatius and Saba",NA,7626844,The Kingdom of the Netherlands,Netherlands,NL
+534,SX,SXM,Sint Maarten,NA,7609695,The Kingdom of the Netherlands,Netherlands,NL
+535,BQ,BES,The Kingdom of the Netherlands,NA,7626844,The Kingdom of the Netherlands,Netherlands,NL
+533,AW,ABW,The Kingdom of the Netherlands,NA,3577279,The Kingdom of the Netherlands,Netherlands,NL
+531,CW,CUW,Curacao,NA,7626836,The Kingdom of the Netherlands,Netherlands,NL
+531,CW,CUW,The Kingdom of the Netherlands,NA,7626836,The Kingdom of the Netherlands,Netherlands,NL
+528,NL,NLD,The Netherlands,EU,2750405,The Kingdom of the Netherlands,Netherlands,NL
+528,NL,NLD,The Kingdom of the Netherlands,EU,2750405,The Kingdom of the Netherlands,Netherlands,NL
+530,AN,ANT,Nehterlands,NA,8505032,The Kingdom of the Netherlands,Netherlands,NL
+531,CW,CUW,The Country of Curacao,NA,7626836,The Kingdom of the Netherlands,Netherlands,NL
+530,AN,ANT,Netherlands Antilles,NA,8505032,The Kingdom of the Netherlands,Netherlands,NL
+528,NL,NLD,Netherlands,EU,2750405,The Kingdom of the Netherlands,Netherlands,NL
+417,KG,KGZ,Kyrgyzstan,AS,1527747,The Kyrgyz Republic,Kyrgyzstan,KG
+417,KG,KGZ,The Kyrgyz Republic,AS,1527747,The Kyrgyz Republic,Kyrgyzstan,KG
+417,KG,KGZ,Kirghizia,AS,1527747,The Kyrgyz Republic,Kyrgyzstan,KG
+418,LA,LAO,The Lao People's Democratic Republic,AS,1655842,The Lao People's Democratic Republic,Laos,LA
+418,LA,LAO,Laos,AS,1655842,The Lao People's Democratic Republic,Laos,LA
+422,LB,LBN,The Lebanese Republic,AS,272103,The Lebanese Republic,Lebanon,LB
+422,LB,LBN,Lebanon,AS,272103,The Lebanese Republic,Lebanon,LB
+96,BN,BRN,Brunei,AS,1820814,"The Nation of Brunei, the Abode of Peace",Brunei,BN
+96,BN,BRN,"The Nation of Brunei, the Abode of Peace",AS,1820814,"The Nation of Brunei, the Abode of Peace",Brunei,BN
+858,UY,URY,Uruguay,SA,3439705,The Oriental Republic of Uruguay,Uruguay,UY
+858,UY,URY,The Oriental Republic of Uruguay,SA,3439705,The Oriental Republic of Uruguay,Uruguay,UY
+12,DZ,DZA,The People's Democratic Republic of Algeria,AF,2589581,The People's Democratic Republic of Algeria,Algeria,DZ
+12,DZ,DZA,Algeria,AF,2589581,The People's Democratic Republic of Algeria,Algeria,DZ
+50,BD,BGD,The People's Republic of Bangladesh,AS,1210997,The People's Republic of Bangladesh,Bangladesh,BD
+50,BD,BGD,Bangladesh,AS,1210997,The People's Republic of Bangladesh,Bangladesh,BD
+344,HK,HKG,Hong Kong,AS,1819730,The People's Republic of China,China,CN
+158,TW,TWN,The People's Republic of China,AS,1668284,The People's Republic of China,China,CN
+344,HK,HKG,The People's Republic of China,AS,1819730,The People's Republic of China,China,CN
+344,HK,HKG,The Hong Kong Special Administrative Region of China,AS,1819730,The People's Republic of China,China,CN
+156,CN,CHN,Spratly Islands,AS,1814991,The People's Republic of China,China,CN
+156,CN,CHN,Paracel Islands,AS,1814991,The People's Republic of China,China,CN
+156,CN,CHN,PRC,AS,1814991,The People's Republic of China,China,CN
+158,TW,TWN,Province of China,AS,1668284,The People's Republic of China,China,CN
+158,TW,TWN,Republic of China,AS,1668284,The People's Republic of China,China,CN
+446,MO,MAC,Macao,AS,1821275,The People's Republic of China,China,CN
+156,CN,CHN,China,AS,1814991,The People's Republic of China,China,CN
+158,TW,TWN,Taiwan,AS,1668284,The People's Republic of China,China,CN
+446,MO,MAC,The People's Republic of China,AS,1821275,The People's Republic of China,China,CN
+446,MO,MAC,Macau,AS,1821275,The People's Republic of China,China,CN
+446,MO,MAC,PRC,AS,1821275,The People's Republic of China,China,CN
+156,CN,CHN,P. R. China,AS,1814991,The People's Republic of China,China,CN
+156,CN,CHN,P.R. China,AS,1814991,The People's Republic of China,China,CN
+156,CN,CHN,PR China,AS,1814991,The People's Republic of China,China,CN
+156,CN,CHN,The People's Republic of China,AS,1814991,The People's Republic of China,China,CN
+68,BO,BOL,Bolivia,SA,3923057,The Plurinational State of Bolivia,Bolivia,BO
+68,BO,BOL,The Plurinational State of Bolivia,SA,3923057,The Plurinational State of Bolivia,Bolivia,BO
+620,PT,PRT,The Portuguese Republic,EU,2264397,The Portuguese Republic,Portugal,PT
+620,PT,PRT,Portugal,EU,2264397,The Portuguese Republic,Portugal,PT
+20,AD,AND,Andorra,EU,3041565,The Principality of Andorra,Andorra,AD
+20,AD,AND,The Principality of Andorra,EU,3041565,The Principality of Andorra,Andorra,AD
+438,LI,LIE,Liechtenstein,EU,3042058,The Principality of Liechtenstein,Liechtenstein,LI
+438,LI,LIE,The Principality of Liechtenstein,EU,3042058,The Principality of Liechtenstein,Liechtenstein,LI
+492,MC,MCO,Monaco,EU,2993457,The Principality of Monaco,Monaco,MC
+492,MC,MCO,The Principality of Monaco,EU,2993457,The Principality of Monaco,Monaco,MC
+8,AL,ALB,Albania,EU,783754,The Republic of Albania,Albania,AL
+8,AL,ALB,The Republic of Albania,EU,783754,The Republic of Albania,Albania,AL
+24,AO,AGO,Angola,AF,3351879,The Republic of Angola,Angola,AO
+24,AO,AGO,The Republic of Angola,AF,3351879,The Republic of Angola,Angola,AO
+51,AM,ARM,Armenia,AS,174982,The Republic of Armenia,Armenia,AM
+51,AM,ARM,The Republic of Armenia,AS,174982,The Republic of Armenia,Armenia,AM
+40,AT,AUT,The Republic of Austria,EU,2782113,The Republic of Austria,Austria,AT
+40,AT,AUT,Austria,EU,2782113,The Republic of Austria,Austria,AT
+31,AZ,AZE,The Republic of Azerbaijan,AS,587116,The Republic of Azerbaijan,Azerbaijan,AZ
+31,AZ,AZE,Azerbaijan,AS,587116,The Republic of Azerbaijan,Azerbaijan,AZ
+112,BY,BLR,Belarus,EU,630336,The Republic of Belarus,Belarus,BY
+112,BY,BLR,The Republic of Belarus,EU,630336,The Republic of Belarus,Belarus,BY
+204,BJ,BEN,The Republic of Benin,AF,2395170,The Republic of Benin,Benin,BJ
+204,BJ,BEN,Benin,AF,2395170,The Republic of Benin,Benin,BJ
+72,BW,BWA,The Republic of Botswana,AF,933860,The Republic of Botswana,Botswana,BW
+72,BW,BWA,Botswana,AF,933860,The Republic of Botswana,Botswana,BW
+100,BG,BGR,The Republic of Bulgaria,EU,732800,The Republic of Bulgaria,Bulgaria,BG
+100,BG,BGR,Bulgaria,EU,732800,The Republic of Bulgaria,Bulgaria,BG
+108,BI,BDI,Burundi,AF,433561,The Republic of Burundi,Burundi,BI
+108,BI,BDI,The Republic of Burundi,AF,433561,The Republic of Burundi,Burundi,BI
+120,CM,CMR,The Republic of Cameroon,AF,2233387,The Republic of Cameroon,Cameroon,CM
+120,CM,CMR,Cameroon,AF,2233387,The Republic of Cameroon,Cameroon,CM
+148,TD,TCD,The Republic of Chad,AF,2434508,The Republic of Chad,Chad,TD
+148,TD,TCD,Chad,AF,2434508,The Republic of Chad,Chad,TD
+152,CL,CHL,Chile,SA,3895114,The Republic of Chile,Chile,CL
+152,CL,CHL,The Republic of Chile,SA,3895114,The Republic of Chile,Chile,CL
+170,CO,COL,The Republic of Colombia,SA,3686110,The Republic of Colombia,Colombia,CO
+170,CO,COL,Colombia,SA,3686110,The Republic of Colombia,Colombia,CO
+188,CR,CRI,The Republic of Costa Rica,NA,3624060,The Republic of Costa Rica,Costa Rica,CR
+188,CR,CRI,Costa Rica,NA,3624060,The Republic of Costa Rica,Costa Rica,CR
+191,HR,HRV,The Republic of Croatia,EU,3202326,The Republic of Croatia,Croatia,HR
+191,HR,HRV,Croatia,EU,3202326,The Republic of Croatia,Croatia,HR
+192,CU,CUB,The Republic of Cuba,NA,3562981,The Republic of Cuba,Cuba,CU
+192,CU,CUB,Cuba,NA,3562981,The Republic of Cuba,Cuba,CU
+196,CY,CYP,Cyprus,EU,146669,The Republic of Cyprus,Cyprus,CY
+196,CY,CYP,The Republic of Cyprus,EU,146669,The Republic of Cyprus,Cyprus,CY
+262,DJ,DJI,Djibouti,AF,223816,The Republic of Djibouti,Djibouti,DJ
+262,DJ,DJI,The Republic of Djibouti,AF,223816,The Republic of Djibouti,Djibouti,DJ
+218,EC,ECU,The Republic of Ecuador,SA,3658394,The Republic of Ecuador,Ecuador,EC
+218,EC,ECU,Ecuador,SA,3658394,The Republic of Ecuador,Ecuador,EC
+222,SV,SLV,El Salvador,NA,3585968,The Republic of El Salvador,El Salvador,SV
+222,SV,SLV,The Republic of El Salvador,NA,3585968,The Republic of El Salvador,El Salvador,SV
+226,GQ,GNQ,Equatorial Guinea,AF,2309096,The Republic of Equatorial Guinea,Equatorial Guinea,GQ
+226,GQ,GNQ,The Republic of Equatorial Guinea,AF,2309096,The Republic of Equatorial Guinea,Equatorial Guinea,GQ
+233,EE,EST,The Republic of Estonia,EU,453733,The Republic of Estonia,Estonia,EE
+233,EE,EST,Estonia,EU,453733,The Republic of Estonia,Estonia,EE
+242,FJ,FJI,The Republic of Fiji,OC,2205218,The Republic of Fiji,Fiji,FJ
+242,FJ,FJI,Fiji,OC,2205218,The Republic of Fiji,Fiji,FJ
+246,FI,FIN,Finland,EU,660013,The Republic of Finland,Finland,FI
+246,FI,FIN,The Republic of Finland,EU,660013,The Republic of Finland,Finland,FI
+288,GH,GHA,Ghana,AF,2300660,The Republic of Ghana,Ghana,GH
+288,GH,GHA,The Republic of Ghana,AF,2300660,The Republic of Ghana,Ghana,GH
+320,GT,GTM,The Republic of Guatemala,NA,3595528,The Republic of Guatemala,Guatemala,GT
+320,GT,GTM,Guatemala,NA,3595528,The Republic of Guatemala,Guatemala,GT
+324,GN,GIN,The Republic of Guinea,AF,2420477,The Republic of Guinea,Guinea,GN
+324,GN,GIN,Guinea,AF,2420477,The Republic of Guinea,Guinea,GN
+624,GW,GNB,Guinea-Bissau,AF,2372248,The Republic of Guinea-Bissau,Guinea-Bissau,GW
+624,GW,GNB,The Republic of Guinea-Bissau,AF,2372248,The Republic of Guinea-Bissau,Guinea-Bissau,GW
+332,HT,HTI,The Republic of Haiti,NA,3723988,The Republic of Haiti,Haiti,HT
+332,HT,HTI,Haiti,NA,3723988,The Republic of Haiti,Haiti,HT
+340,HN,HND,Honduras,NA,3608932,The Republic of Honduras,Honduras,HN
+340,HN,HND,The Republic of Honduras,NA,3608932,The Republic of Honduras,Honduras,HN
+356,IN,IND,The Republic of India,AS,1269750,The Republic of India,India,IN
+356,IN,IND,India,AS,1269750,The Republic of India,India,IN
+360,ID,IDN,The Republic of Indonesia,AS,1643084,The Republic of Indonesia,Indonesia,ID
+360,ID,IDN,Indonesia,AS,1643084,The Republic of Indonesia,Indonesia,ID
+368,IQ,IRQ,The Republic of Iraq,AS,99237,The Republic of Iraq,Iraq,IQ
+368,IQ,IRQ,Iraq,AS,99237,The Republic of Iraq,Iraq,IQ
+398,KZ,KAZ,The Republic of Kazakhstan,AS,1522867,The Republic of Kazakhstan,Kazakhstan,KZ
+398,KZ,KAZ,Kazakhstan,AS,1522867,The Republic of Kazakhstan,Kazakhstan,KZ
+404,KE,KEN,The Republic of Kenya,AF,192950,The Republic of Kenya,Kenya,KE
+404,KE,KEN,Kenya,AF,192950,The Republic of Kenya,Kenya,KE
+296,KI,KIR,The Republic of Kiribati,OC,4030945,The Republic of Kiribati,Kiribati,KI
+296,KI,KIR,Kiribati,OC,4030945,The Republic of Kiribati,Kiribati,KI
+410,KR,KOR,South Korea,AS,1835841,The Republic of Korea,South Korea,KR
+410,KR,KOR,The Republic of Korea,AS,1835841,The Republic of Korea,South Korea,KR
+428,LV,LVA,The Republic of Latvia,EU,458258,The Republic of Latvia,Latvia,LV
+428,LV,LVA,Latvia,EU,458258,The Republic of Latvia,Latvia,LV
+430,LR,LBR,The Republic of Liberia,AF,2275384,The Republic of Liberia,Liberia,LR
+430,LR,LBR,Liberia,AF,2275384,The Republic of Liberia,Liberia,LR
+440,LT,LTU,Lithuania,EU,597427,The Republic of Lithuania,Lithuania,LT
+440,LT,LTU,The Republic of Lithuania,EU,597427,The Republic of Lithuania,Lithuania,LT
+450,MG,MDG,The Republic of Madagascar,AF,1062947,The Republic of Madagascar,Madagascar,MG
+450,MG,MDG,Madagascar,AF,1062947,The Republic of Madagascar,Madagascar,MG
+454,MW,MWI,Malawi,AF,927384,The Republic of Malawi,Malawi,MW
+454,MW,MWI,The Republic of Malawi,AF,927384,The Republic of Malawi,Malawi,MW
+462,MV,MDV,Maldives,AS,1282028,The Republic of Maldives,Maldives,MV
+462,MV,MDV,The Republic of Maldives,AS,1282028,The Republic of Maldives,Maldives,MV
+466,ML,MLI,The Republic of Mali,AF,2453866,The Republic of Mali,Mali,ML
+466,ML,MLI,Mali,AF,2453866,The Republic of Mali,Mali,ML
+470,MT,MLT,The Republic of Malta,EU,2562770,The Republic of Malta,Malta,MT
+470,MT,MLT,Malta,EU,2562770,The Republic of Malta,Malta,MT
+480,MU,MUS,The Republic of Mauritius,AF,934292,The Republic of Mauritius,Mauritius,MU
+480,MU,MUS,Mauritius,AF,934292,The Republic of Mauritius,Mauritius,MU
+480,MU,MUS,Mauritian,AF,934292,The Republic of Mauritius,Mauritius,MU
+498,MD,MDA,Moldova,EU,617790,The Republic of Moldova,Moldova,MD
+498,MD,MDA,The Republic of Moldova,EU,617790,The Republic of Moldova,Moldova,MD
+508,MZ,MOZ,Mozambique,AF,1036973,The Republic of Mozambique,Mozambique,MZ
+508,MZ,MOZ,The Republic of Mozambique,AF,1036973,The Republic of Mozambique,Mozambique,MZ
+516,NA,NAM,The Republic of Namibia,AF,3355338,The Republic of Namibia,Namibia,NA
+516,NA,NAM,Namibia,AF,3355338,The Republic of Namibia,Namibia,NA
+520,NR,NRU,Nauru,OC,2110425,The Republic of Nauru,Nauru,NR
+520,NR,NRU,The Republic of Nauru,OC,2110425,The Republic of Nauru,Nauru,NR
+558,NI,NIC,Nicaragua,NA,3617476,The Republic of Nicaragua,Nicaragua,NI
+558,NI,NIC,The Republic of Nicaragua,NA,3617476,The Republic of Nicaragua,Nicaragua,NI
+585,PW,PLW,The Republic of Palau,OC,1559582,The Republic of Palau,Palau,PW
+585,PW,PLW,Palau,OC,1559582,The Republic of Palau,Palau,PW
+591,PA,PAN,The Republic of Panama,NA,3703430,The Republic of Panama,Panama,PA
+591,PA,PAN,Panama,NA,3703430,The Republic of Panama,Panama,PA
+600,PY,PRY,Paraguay,SA,3437598,The Republic of Paraguay,Paraguay,PY
+600,PY,PRY,The Republic of Paraguay,SA,3437598,The Republic of Paraguay,Paraguay,PY
+604,PE,PER,Peru,SA,3932488,The Republic of Peru,Peru,PE
+604,PE,PER,The Republic of Peru,SA,3932488,The Republic of Peru,Peru,PE
+616,PL,POL,Poland,EU,798544,The Republic of Poland,Poland,PL
+616,PL,POL,The Republic of Poland,EU,798544,The Republic of Poland,Poland,PL
+646,RW,RWA,Rwanda,AF,49518,The Republic of Rwanda,Rwanda,RW
+646,RW,RWA,The Republic of Rwanda,AF,49518,The Republic of Rwanda,Rwanda,RW
+674,SM,SMR,San Marino,EU,3168068,The Republic of San Marino,San Marino,SM
+10,AQ,ATA,ATS,AN,6697173,Antarctic Treaty,Antarctica,AQ
+10,AQ,ATA,Antarctic Treaty,AN,6697173,Antarctic Treaty,Antarctica,AQ
+10,AQ,ATA,Antarctica,AN,6697173,Antarctic Treaty,Antarctica,AQ
+10,AQ,ATA,Antarctic Treaty System,AN,6697173,Antarctic Treaty,Antarctica,AQ
+28,AG,ATG,Antigua and Barbuda,NA,3576396,Antigua and Barbuda,Antigua and Barbuda,AG
+28,AG,ATG,Commonwealth,NA,3576396,Antigua and Barbuda,Antigua and Barbuda,AG
+28,AG,ATG,Commonwealth of Nations,NA,3576396,Antigua and Barbuda,Antigua and Barbuda,AG
+84,BZ,BLZ,Belize,NA,3582678,Belize,Belize,BZ
+70,BA,BIH,Bosnia and Herzegovina,EU,3277605,Bosnia and Herzegovina,Bosnia and Herzegovina,BA
+854,BF,BFA,Burkina Faso,AF,2361809,Burkina Faso,Burkina Faso,BF
+854,BF,BFA,West Africa,AF,2361809,Burkina Faso,Burkina Faso,BF
+124,CA,CAN,Canada,NA,6251999,Canada,Canada,CA
+334,HM,HMD,Commonwealth of Australia,AN,1547314,Commonwealth of Australia,Australia,AU
+36,AU,AUS,Coral Sea Islands,OC,2077456,Commonwealth of Australia,Australia,AU
+166,CC,CCK,The Territory of Cocos (Keeling) Islands,AS,1547376,Commonwealth of Australia,Australia,AU
+162,CX,CXR,The Territory of Christmas Island,AS,2078138,Commonwealth of Australia,Australia,AU
+334,HM,HMD,The Territory of Heard Island and McDonald Islands,AN,1547314,Commonwealth of Australia,Australia,AU
+574,NF,NFK,The Territory of Norfolk Island,OC,2155115,Commonwealth of Australia,Australia,AU
+574,NF,NFK,Norfolk Island,OC,2155115,Commonwealth of Australia,Australia,AU
+162,CX,CXR,Christmas Island,AS,2078138,Commonwealth of Australia,Australia,AU
+36,AU,AUS,Ashmore and Cartier Islands,OC,2077456,Commonwealth of Australia,Australia,AU
+574,NF,NFK,Commonwealth of Australia,OC,2155115,Commonwealth of Australia,Australia,AU
+166,CC,CCK,Commonwealth of Australia,AS,1547376,Commonwealth of Australia,Australia,AU
+162,CX,CXR,Commonwealth of Australia,AS,2078138,Commonwealth of Australia,Australia,AU
+334,HM,HMD,Heard Island and McDonald Islands,AN,1547314,Commonwealth of Australia,Australia,AU
+36,AU,AUS,Commonwealth of Australia,OC,2077456,Commonwealth of Australia,Australia,AU
+36,AU,AUS,Australia,OC,2077456,Commonwealth of Australia,Australia,AU
+166,CC,CCK,Cocos Islands,AS,1547376,Commonwealth of Australia,Australia,AU
+384,CI,CIV,Ivory Coast,AF,2287781,Cote d'Ivoire ,Ivory Coast,CI
+384,CI,CIV,Cote d'Ivoire,AF,2287781,Cote d'Ivoire ,Ivory Coast,CI
+384,CI,CIV,Cote d'Ivoire ,AF,2287781,Cote d'Ivoire ,Ivory Coast,CI
+626,TL,TLS,East Timor,OC,1966436,Democratic Republic of Timor-Leste,Timor-Leste,TL
+626,TL,TLS,Democratic Republic of Timor-Leste,OC,1966436,Democratic Republic of Timor-Leste,Timor-Leste,TL
+626,TL,TLS,Timor-Leste,OC,1966436,Democratic Republic of Timor-Leste,Timor-Leste,TL
+208,DK,DNK,The Kingdom of Denmark,EU,2623032,Denmark,Denmark,DK
+234,FO,FRO,The Faroe Islands,EU,2622320,Denmark,Denmark,DK
+234,FO,FRO,Denmark,EU,2622320,Denmark,Denmark,DK
+304,GL,GRL,Denmark,NA,3425505,Denmark,Denmark,DK
+304,GL,GRL,Greenland,NA,3425505,Denmark,Denmark,DK
+234,FO,FRO,Faroe Islands,EU,2622320,Denmark,Denmark,DK
+208,DK,DNK,Denmark,EU,2623032,Denmark,Denmark,DK
+304,GL,GRL,Kalaallit Nunaat,NA,3425505,Denmark,Denmark,DK
+214,DO,DOM,Dominican Republic,NA,3508796,Dominican Republic,Dominican Republic,DO
+748,SZ,SWZ,Eswatini,AF,934841,Eswatini,Eswatini,SZ
+748,SZ,SWZ,Swaziland,AF,934841,Eswatini,Eswatini,SZ
+659,KN,KNA,Saint Kitts and Nevis,NA,3575174,Federation of Saint Christopher and Nevis,Saint Kitts and Nevis,KN
+659,KN,KNA,Federation of Saint Christopher and Nevis,NA,3575174,Federation of Saint Christopher and Nevis,Saint Kitts and Nevis,KN
+248,AX,ALA,Finland,EU,661882,Finland,Finland,FI
+248,AX,ALA,Aland Islands,EU,661882,Finland,Finland,FI
+268,GE,GEO,Georgia,AS,614540,Georgia,Georgia,GE
+308,GD,GRD,Grenada,NA,3580239,Grenada,Grenada,GD
+348,HU,HUN,Hungary,EU,719819,Hungary,Hungary,HU
+352,IS,ISL,Iceland,EU,2629691,Iceland,Iceland,IS
+372,IE,IRL,Ireland,EU,2963597,Ireland,Ireland,IE
+388,JM,JAM,Jamaica,NA,3489940,Jamaica,Jamaica,JM
+392,JP,JPN,Japan,AS,1861060,Japan,Japan,JP
+458,MY,MYS,Malaysia,AS,1733045,Malaysia,Malaysia,MY
+772,TK,TKL,Tokelau,OC,4031074,New Zealand,New Zealand,NZ
+184,CK,COK,Cook Islands,OC,1899402,New Zealand,New Zealand,NZ
+570,NU,NIU,Niue,OC,4036232,New Zealand,New Zealand,NZ
+772,TK,TKL,New Zealand,OC,4031074,New Zealand,New Zealand,NZ
+184,CK,COK,New Zealand,OC,1899402,New Zealand,New Zealand,NZ
+570,NU,NIU,New Zealand,OC,4036232,New Zealand,New Zealand,NZ
+554,NZ,NZL,New Zealand,OC,2186224,New Zealand,New Zealand,NZ
+,,,Cooperation Sea,,,Ocean,Ocean,
+,,,Cosmonauts Sea,,,Ocean,Ocean,
+,,,Davis Sea,,,Ocean,Ocean,
+,,,D'Urville Sea,,,Ocean,Ocean,
+,,,King Haakon VII Sea,,,Ocean,Ocean,
+,,,Lazarev Sea,,,Ocean,Ocean,
+,,,Mawson Sea,,,Ocean,Ocean,
+,,,Riiser-Larsen Sea,,,Ocean,Ocean,
+,,,Ross Sea,,,Ocean,Ocean,
+,,,Scotia Sea,,,Ocean,Ocean,
+,,,Somov Sea,,,Ocean,Ocean,
+,,,Weddell Sea,,,Ocean,Ocean,
+,,,Aral Sea,,,Ocean,Ocean,
+,,,Caspian Sea,,,Ocean,Ocean,
+,,,Dead Sea,,,Ocean,Ocean,
+,,,Salton Sea,,,Ocean,Ocean,
+,,,Ocean,,,Ocean,Ocean,
+,,,Sea of Azov,,,Ocean,Ocean,
+,,,Sea of Crete,,,Ocean,Ocean,
+,,,Sea of the Hebrides,,,Ocean,Ocean,
+,,,Thracian Sea,,,Ocean,Ocean,
+,,,Tyrrhenian Sea,,,Ocean,Ocean,
+,,,Wadden Sea,,,Ocean,Ocean,
+,,,Andaman Sea,,,Ocean,Ocean,
+,,,Arabian Sea,,,Ocean,Ocean,
+,,,Bay of Bengal,,,Ocean,Ocean,
+,,,Flores Sea,,,Ocean,Ocean,
+,,,Great Australian Bight,,,Ocean,Ocean,
+,,,Gulf of Aden,,,Ocean,Ocean,
+,,,Gulf of Aqaba,,,Ocean,Ocean,
+,,,Gulf of Khambhat,,,Ocean,Ocean,
+,,,Gulf of Kutch,,,Ocean,Ocean,
+,,,Gulf of Oman,,,Ocean,Ocean,
+,,,Gulf of Suez,,,Ocean,Ocean,
+,,,Laccadive Sea,,,Ocean,Ocean,
+,,,Mozambique Channel,,,Ocean,Ocean,
+,,,Persian Gulf,,,Ocean,Ocean,
+,,,Red Sea,,,Ocean,Ocean,
+,,,Timor Sea,,,Ocean,Ocean,
+,,,Arafura Sea,,,Ocean,Ocean,
+,,,Bali Sea,,,Ocean,Ocean,
+,,,Banda Sea,,,Ocean,Ocean,
+,,,Bering Sea,,,Ocean,Ocean,
+,,,Bismarck Sea,,,Ocean,Ocean,
+,,,Bohai Sea,,,Ocean,Ocean,
+,,,Bohol Sea,,,Ocean,Ocean,
+,,,Camotes Sea,,,Ocean,Ocean,
+,,,Celebes Sea,,,Ocean,Ocean,
+,,,Chilean Sea,,,Ocean,Ocean,
+,,,Coral Sea,,,Ocean,Ocean,
+,,,East China Sea,,,Ocean,Ocean,
+,,,Gulf of Alaska,,,Ocean,Ocean,
+,,,Gulf of Anadyr,,,Ocean,Ocean,
+,,,Gulf of California,,,Ocean,Ocean,
+,,,Gulf of Carpentaria,,,Ocean,Ocean,
+,,,Gulf of Fonseca,,,Ocean,Ocean,
+,,,Gulf of Panama,,,Ocean,Ocean,
+,,,Gulf of Thailand,,,Ocean,Ocean,
+,,,Gulf of Tonkin,,,Ocean,Ocean,
+,,,Halmahera Sea,,,Ocean,Ocean,
+,,,Java Sea,,,Ocean,Ocean,
+,,,Koro Sea,,,Ocean,Ocean,
+,,,Mar de Grau,,,Ocean,Ocean,
+,,,Molucca Sea,,,Ocean,Ocean,
+,,,Moro Gulf,,,Ocean,Ocean,
+,,,Philippine Sea,,,Ocean,Ocean,
+,,,Salish Sea,,,Ocean,Ocean,
+,,,Savu Sea,,,Ocean,Ocean,
+,,,Sea of Japan,,,Ocean,Ocean,
+,,,Sea of Okhotsk,,,Ocean,Ocean,
+,,,Seram Sea,,,Ocean,Ocean,
+,,,Seto Inland Sea,,,Ocean,Ocean,
+,,,Shantar Sea,,,Ocean,Ocean,
+,,,Sibuyan Sea,,,Ocean,Ocean,
+,,,Solomon Sea,,,Ocean,Ocean,
+,,,South China SeaSulu Sea,,,Ocean,Ocean,
+,,,Tasman Sea,,,Ocean,Ocean,
+,,,Visayan Sea,,,Ocean,Ocean,
+,,,Yellow Sea,,,Ocean,Ocean,
+,,,Amundsen Sea,,,Ocean,Ocean,
+,,,Bellingshausen Sea,,,Ocean,Ocean,
+,,,Arctic Ocean,,,Ocean,Ocean,
+,,,Atlantic Ocean,,,Ocean,Ocean,
+,,,Indian Ocean,,,Ocean,Ocean,
+,,,Pacific Ocean,,,Ocean,Ocean,
+,,,Southern Ocean,,,Ocean,Ocean,
+,,,Endorheic basins,,,Ocean,Ocean,
+,,,Amundsen Gulf,,,Ocean,Ocean,
+,,,Barents Sea,,,Ocean,Ocean,
+,,,Beaufort Sea,,,Ocean,Ocean,
+,,,Chukchi Sea,,,Ocean,Ocean,
+,,,East Siberian Sea,,,Ocean,Ocean,
+,,,Greenland Sea,,,Ocean,Ocean,
+,,,Gulf of Boothia,,,Ocean,Ocean,
+,,,Kara Sea,,,Ocean,Ocean,
+,,,Laptev Sea,,,Ocean,Ocean,
+,,,Lincoln Sea,,,Ocean,Ocean,
+,,,Prince Gustaf Adolf Sea,,,Ocean,Ocean,
+,,,Pechora Sea,,,Ocean,Ocean,
+,,,Queen Victoria Sea,,,Ocean,Ocean,
+,,,Wandel Sea,,,Ocean,Ocean,
+,,,White Sea,,,Ocean,Ocean,
+,,,Adriatic Sea,,,Ocean,Ocean,
+,,,Aegean Sea,,,Ocean,Ocean,
+,,,Alboran Sea,,,Ocean,Ocean,
+,,,Archipelago Sea,,,Ocean,Ocean,
+,,,Argentine Sea,,,Ocean,Ocean,
+,,,Baffin Bay,,,Ocean,Ocean,
+,,,Balearic Sea,,,Ocean,Ocean,
+,,,Baltic Sea,,,Ocean,Ocean,
+,,,Bay of Biscay,,,Ocean,Ocean,
+,,,Bay of Bothnia,,,Ocean,Ocean,
+,,,Bay of Campeche,,,Ocean,Ocean,
+,,,Bay of Fundy,,,Ocean,Ocean,
+,,,Black Sea,,,Ocean,Ocean,
+,,,Bothnian Sea,,,Ocean,Ocean,
+,,,Mediterranean Sea Caribbean Sea,,,Ocean,Ocean,
+,,,Celtic Sea,,,Ocean,Ocean,
+,,,English Channel,,,Ocean,Ocean,
+,,,Foxe Basin,,,Ocean,Ocean,
+,,,Greenland Sean,,,Ocean,Ocean,
+,,,Gulf of Bothnian,,,Ocean,Ocean,
+,,,Gulf of Finland,,,Ocean,Ocean,
+,,,Gulf of Lion,,,Ocean,Ocean,
+,,,Gulf of Guinea,,,Ocean,Ocean,
+,,,Gulf of Maine,,,Ocean,Ocean,
+,,,Gulf of Mexico,,,Ocean,Ocean,
+,,,Gulf of Saint Lawrence,,,Ocean,Ocean,
+,,,Gulf of Sidra,,,Ocean,Ocean,
+,,,Gulf of Venezuela,,,Ocean,Ocean,
+,,,Hudson BayIonian Sea,,,Ocean,Ocean,
+,,,Irish Sea,,,Ocean,Ocean,
+,,,Irminger Sea,,,Ocean,Ocean,
+,,,James Bay,,,Ocean,Ocean,
+,,,Labrador Sea,,,Ocean,Ocean,
+,,,Levantine Sea,,,Ocean,Ocean,
+,,,Libyan Sea,,,Ocean,Ocean,
+,,,Ligurian Sea,,,Ocean,Ocean,
+,,,Marmara Sea,,,Ocean,Ocean,
+,,,Mediterranean Sea,,,Ocean,Ocean,
+,,,Myrtoan Sea,,,Ocean,Ocean,
+,,,North Sea,,,Ocean,Ocean,
+,,,Norwegian Sea,,,Ocean,Ocean,
+,,,Sargasso Sean,,,Ocean,Ocean,
+,,,Sea of ?land,,,Ocean,Ocean,
+275,PS,PSE,State of Palestine,AS,6254930,Palestinian Territory,Palestine,PS
+275,PS,PSE,Palestinian Territory,AS,6254930,Palestinian Territory,Palestine,PS
+275,PS,PSE,Gaza Strip,AS,6254930,Palestinian Territory,Palestine,PS
+275,PS,PSE,West Bank,AS,6254930,Palestinian Territory,Palestine,PS
+643,RU,RUS,Russian Federation,EU,2017370,The Russian Federation,Russia,RU
+642,RO,ROU,Romania,EU,798549,Romania,Romania,RO
+662,LC,LCA,Saint Lucia,NA,3576468,Saint Lucia,Saint Lucia,LC
+670,VC,VCT,Saint Vincent and the Grenadines,NA,3577815,Saint Vincent and the Grenadines,Saint Vincent and the Grenadines,VC
+704,VN,VNM,Vietnam,AS,1562822,Socialist Republic of Vietnam,Vietnam,VN
+704,VN,VNM,Viet Nam,AS,1562822,Socialist Republic of Vietnam,Vietnam,VN
+704,VN,VNM,Socialist Republic of Vietnam,AS,1562822,Socialist Republic of Vietnam,Vietnam,VN
+90,SB,SLB,Solomon Islands,OC,2103350,Solomon Islands,Solomon Islands,SB
+818,EG,EGY,The Arab Republic of Egypt,AF,357994,The Arab Republic of Egypt,Egypt,EG
+818,EG,EGY,Egypt,AF,357994,The Arab Republic of Egypt,Egypt,EG
+32,AR,ARG,Argentina,SA,3865483,The Argentine Republic,Argentina,AR
+32,AR,ARG,The Argentine Republic,SA,3865483,The Argentine Republic,Argentina,AR
+862,VE,VEN,Venezuela,SA,3625428,The Bolivarian Republic of Venezuela,Venezuela,VE
+862,VE,VEN,The Bolivarian Republic of Venezuela,SA,3625428,The Bolivarian Republic of Venezuela,Venezuela,VE
+140,CF,CAF,The Central African Republic,AF,239880,The Central African Republic,Central African Republic,CF
+140,CF,CAF,Central African Republic,AF,239880,The Central African Republic,Central African Republic,CF
+328,GY,GUY,Guyana,SA,3378535,The Co-operative Republic of Guyana,Guyana,GY
+328,GY,GUY,The Co-operative Republic of Guyana,SA,3378535,The Co-operative Republic of Guyana,Guyana,GY
+328,GY,GUY,British Guiana,SA,3378535,The Co-operative Republic of Guyana,Guyana,GY
+212,DM,DMA,The Commonwealth of Dominica,NA,3575830,The Commonwealth of Dominica,Dominica,DM
+212,DM,DMA,Dominica,NA,3575830,The Commonwealth of Dominica,Dominica,DM
+44,BS,BHS,Bahamas,NA,3572887,The Commonwealth of The Bahamas,Bahamas,BS
+44,BS,BHS,The Commonwealth of The Bahamas,NA,3572887,The Commonwealth of The Bahamas,Bahamas,BS
+408,KP,PRK,The Democratic People's Republic of Korea,AS,1873107,The Democratic People's Republic of Korea,North Korea,KP
+408,KP,PRK,North Korea,AS,1873107,The Democratic People's Republic of Korea,North Korea,KP
+144,LK,LKA,Sri Lanka,AS,1227603,The Democratic Socialist Republic of Sri Lanka,Sri Lanka,LK
+144,LK,LKA,The Democratic Socialist Republic of Sri Lanka,AS,1227603,The Democratic Socialist Republic of Sri Lanka,Sri Lanka,LK
+231,ET,ETH,Ethiopia,AF,337996,The Federal Democratic Republic of Ethiopia,Ethiopia,ET
+231,ET,ETH,The Federal Democratic Republic of Ethiopia,AF,337996,The Federal Democratic Republic of Ethiopia,Ethiopia,ET
+524,NP,NPL,The Federal Democratic Republic of Nepal,AS,1282988,The Federal Democratic Republic of Nepal,Nepal,NP
+524,NP,NPL,Nepal,AS,1282988,The Federal Democratic Republic of Nepal,Nepal,NP
+276,DE,DEU,Germany,EU,2921044,The Federal Republic of Germany,Germany,DE
+276,DE,DEU,The Federal Republic of Germany,EU,2921044,The Federal Republic of Germany,Germany,DE
+566,NG,NGA,Nigeria,AF,2328926,The Federal Republic of Nigeria,Nigeria,NG
+566,NG,NGA,The Federal Republic of Nigeria,AF,2328926,The Federal Republic of Nigeria,Nigeria,NG
+706,SO,SOM,The Federal Republic of Somalia,AF,51537,The Federal Republic of Somalia,Somalia,SO
+706,SO,SOM,Somalia,AF,51537,The Federal Republic of Somalia,Somalia,SO
+583,FM,FSM,Micronesia,OC,2081918,The Federated States of Micronesia,Micronesia,FM
+583,FM,FSM,The Federated States of Micronesia,OC,2081918,The Federated States of Micronesia,Micronesia,FM
+76,BR,BRA,Brasil,SA,3469034,The Federative Republic of Brazil,Brazil,BR
+76,BR,BRA,Brazil,SA,3469034,The Federative Republic of Brazil,Brazil,BR
+76,BR,BRA,The Federative Republic of Brazil,SA,3469034,The Federative Republic of Brazil,Brazil,BR
+666,PM,SPM,The French Republic,NA,3424932,The French Republic,France,FR
+254,GF,GUF,The French Republic,SA,3381670,The French Republic,France,FR
+652,BL,BLM,The French Republic,NA,3578476,The French Republic,France,FR
+663,MF,MAF,The Collectivity of Saint-Martin,NA,3578421,The French Republic,France,FR
+666,PM,SPM,The Overseas Collectivity of Saint-Pierre and Miquelon,NA,3424932,The French Republic,France,FR
+312,GP,GLP,Guadeloupe,NA,3579143,The French Republic,France,FR
+474,MQ,MTQ,Martinique,NA,3570311,The French Republic,France,FR
+250,FR,FRA,Tromelin Island,EU,3017382,The French Republic,France,FR
+258,PF,PYF,The French Republic,OC,4030656,The French Republic,France,FR
+876,WF,WLF,The French Republic,OC,4034749,The French Republic,France,FR
+175,YT,MYT,The French Republic,AF,1024031,The French Republic,France,FR
+474,MQ,MTQ,The French Republic,NA,3570311,The French Republic,France,FR
+652,BL,BLM,Saint Barthelemy,NA,3578476,The French Republic,France,FR
+260,TF,ATF,French Southern Territories,AN,1546748,The French Republic,France,FR
+876,WF,WLF,Wallis and Futuna,OC,4034749,The French Republic,France,FR
+175,YT,MYT,Mayotte,AF,1024031,The French Republic,France,FR
+638,RE,REU,The French Republic,AF,935317,The French Republic,France,FR
+250,FR,FRA,Clipperton Island,EU,3017382,The French Republic,France,FR
+260,TF,ATF,The French Southern and Antarctic Lands,AN,1546748,The French Republic,France,FR
+876,WF,WLF,The Territory of the Wallis and Futuna Islands,OC,4034749,The French Republic,France,FR
+175,YT,MYT,The Department of Mayotte,AF,1024031,The French Republic,France,FR
+652,BL,BLM,The Collectivity of Saint-Barthelemy,NA,3578476,The French Republic,France,FR
+250,FR,FRA,Kerguelen Archipelago,EU,3017382,The French Republic,France,FR
+250,FR,FRA,Juan de Nova Island,EU,3017382,The French Republic,France,FR
+250,FR,FRA,Glorioso Islands,EU,3017382,The French Republic,France,FR
+250,FR,FRA,Bassas da India,EU,3017382,The French Republic,France,FR
+250,FR,FRA,French Southern and Antarctic Lands,EU,3017382,The French Republic,France,FR
+250,FR,FRA,Europa Island,EU,3017382,The French Republic,France,FR
+540,NC,NCL,The French Republic,OC,2139685,The French Republic,France,FR
+663,MF,MAF,The French Republic,NA,3578421,The French Republic,France,FR
+250,FR,FRA,The French Republic,EU,3017382,The French Republic,France,FR
+260,TF,ATF,The French Republic,AN,1546748,The French Republic,France,FR
+638,RE,REU,Reunion,AF,935317,The French Republic,France,FR
+666,PM,SPM,Saint Pierre and Miquelon,NA,3424932,The French Republic,France,FR
+258,PF,PYF,French Polynesia,OC,4030656,The French Republic,France,FR
+540,NC,NCL,New Caledonia,OC,2139685,The French Republic,France,FR
+663,MF,MAF,Saint Martin,NA,3578421,The French Republic,France,FR
+254,GF,GUF,French Guiana,SA,3381670,The French Republic,France,FR
+312,GP,GLP,The French Republic,NA,3579143,The French Republic,France,FR
+250,FR,FRA,France,EU,3017382,The French Republic,France,FR
+266,GA,GAB,The Gabonese Republic,AF,2400553,The Gabonese Republic,Gabon,GA
+266,GA,GAB,Gabon,AF,2400553,The Gabonese Republic,Gabon,GA
+442,LU,LUX,The Grand Duchy of Luxembourg,EU,2960313,The Grand Duchy of Luxembourg,Luxembourg,LU
+442,LU,LUX,Luxembourg,EU,2960313,The Grand Duchy of Luxembourg,Luxembourg,LU
+400,JO,JOR,The Hashemite Kingdom of Jordan,AS,248816,The Hashemite Kingdom of Jordan,Jordan,JO
+400,JO,JOR,Jordan,AS,248816,The Hashemite Kingdom of Jordan,Jordan,JO
+300,GR,GRC,Greece,EU,390903,The Hellenic Republic,Greece,GR
+300,GR,GRC,The Hellenic Republic,EU,390903,The Hellenic Republic,Greece,GR
+598,PG,PNG,The Independent State of Papua New Guinea,OC,2088628,The Independent State of Papua New Guinea,Papua New Guinea,PG
+598,PG,PNG,Papua New Guinea,OC,2088628,The Independent State of Papua New Guinea,Papua New Guinea,PG
+4,AF,AFG,Afghanistan,AS,1149361,The Islamic Republic of Afghanistan,Afghanistan,AF
+4,AF,AFG,The Islamic Republic of Afghanistan,AS,1149361,The Islamic Republic of Afghanistan,Afghanistan,AF
+364,IR,IRN,The Islamic Republic of Iran,AS,130758,The Islamic Republic of Iran,Iran,IR
+364,IR,IRN,Iran,AS,130758,The Islamic Republic of Iran,Iran,IR
+478,MR,MRT,Mauritania,AF,2378080,The Islamic Republic of Mauritania,Mauritania,MR
+478,MR,MRT,The Islamic Republic of Mauritania,AF,2378080,The Islamic Republic of Mauritania,Mauritania,MR
+586,PK,PAK,Pakistan,AS,1168579,The Islamic Republic of Pakistan,Pakistan,PK
+586,PK,PAK,The Islamic Republic of Pakistan,AS,1168579,The Islamic Republic of Pakistan,Pakistan,PK
+380,IT,ITA,The Italian Republic,EU,3175395,The Italian Republic,Italy,IT
+380,IT,ITA,Italy,EU,3175395,The Italian Republic,Italy,IT
+48,BH,BHR,Bahrain,AS,290291,The Kingdom of Bahrain,Bahrain,BH
+48,BH,BHR,The Kingdom of Bahrain,AS,290291,The Kingdom of Bahrain,Bahrain,BH
+56,BE,BEL,Belgium,EU,2802361,The Kingdom of Belgium,Belgium,BE
+56,BE,BEL,The Kingdom of Belgium,EU,2802361,The Kingdom of Belgium,Belgium,BE
+64,BT,BTN,Bhutan,AS,1252634,The Kingdom of Bhutan,Bhutan,BT
+64,BT,BTN,The Kingdom of Bhutan,AS,1252634,The Kingdom of Bhutan,Bhutan,BT
+116,KH,KHM,The Kingdom of Cambodia,AS,1831722,The Kingdom of Cambodia,Cambodia,KH
+116,KH,KHM,Cambodia,AS,1831722,The Kingdom of Cambodia,Cambodia,KH
+426,LS,LSO,Lesotho,AF,932692,The Kingdom of Lesotho,Lesotho,LS
+426,LS,LSO,The Kingdom of Lesotho,AF,932692,The Kingdom of Lesotho,Lesotho,LS
+504,MA,MAR,The Kingdom of Morocco,AF,2542007,The Kingdom of Morocco,Morocco,MA
+504,MA,MAR,Morocco,AF,2542007,The Kingdom of Morocco,Morocco,MA
+504,MA,MAR,Western Sahara,AF,2542007,The Kingdom of Morocco,Morocco,MA
+504,MA,MAR,Sahrawi Arab Democratic Republic,AF,2542007,The Kingdom of Morocco,Morocco,MA
+744,SJ,SJM,Svalbard,EU,607072,The Kingdom of Norway,Norway,NO
+578,NO,NOR,Norway,EU,3144096,The Kingdom of Norway,Norway,NO
+74,BV,BVT,The Kingdom of Norway,AN,3371123,The Kingdom of Norway,Norway,NO
+744,SJ,SJM,Jan Mayen,EU,607072,The Kingdom of Norway,Norway,NO
+891,ME,MNE,Montenegro,EU,8505033,Montenegro,Montenegro,ME
+,,,Serbia and Montenegro,,,,,
+,,,Yugoslavia,,,,,
+891,RS,SRB,The Republic of Serbia,EU,8505033,The Republic of Serbia,Serbia,RS
+688,RS,SRB,Serbia,EU,6290252,The Republic of Serbia,Serbia,RS
+688,RS,SRB,The Republic of Serbia,EU,6290252,The Republic of Serbia,Serbia,RS
+104,MM,MMR,Burma,AS,1327865,The Republic of the Union of Myanmar,Myanmar,MM
+104,MM,MMR,The Republic of the Union of Myanmar,AS,1327865,The Republic of the Union of Myanmar,Myanmar,MM
+104,MM,MMR,Myanmar,AS,1327865,The Republic of the Union of Myanmar,Myanmar,MM
+810,SU,SU,USSR,,,,,
+810,SU,SU,Union of Soviet Socialist Republics,,,,,
+732,EH,ESH,The Sahrawi Arab Democratic Republic,AF,2461445,The Sahrawi Arab Democratic Republic,Western Sahara,EH
+732,EH,ESH,Western Sahara,AF,2461445,The Sahrawi Arab Democratic Republic,Western Sahara,EH
+784,AE,ARE,Emirates,AS,290557,The United Arab Emirates,United Arab Emirates,AE
+784,AE,ARE,The United Arab Emirates,AS,290557,The United Arab Emirates,United Arab Emirates,AE
+784,AE,ARE,United Arab Emirates,AS,290557,The United Arab Emirates,United Arab Emirates,AE
+531,CW,CUW,Curacao,NA,7626836,The Kingdom of the Netherlands,Netherlands,NL
+792,TR,TUR,The Republic of Turkey,AS,298795,Republic of Turkiye,Turkiye,TR
+810,SU,SU,Soviet Union,,,,,
+344,HK,HKG,China,AS,1819730,The People's Republic of China,China,CN
+,,,Borneo,,,,,
+52,BB,BRB,Barbados,NA,3374084,Barbardos,Barbados,BB
+52,BB,BRB,Barbardos,NA,3374084,Barbardos,Barbados,BB
+203,CZ,CZE,Czechia,EU,3077311,Czech Republic,Czechia,CZ
+203,CZ,CZE,Czechoslovakia,EU,3077311,Czech Republic,Czechia,CZ
+203,CZ,CZE,Czech Republic,EU,3077311,Czech Republic,Czechia,CZ
+180,CD,COD,Democratic Republic of the Congo,AF,203312,Democratic Republic of the Congo,DR Congo,CD
+,,,Democratic Republic of the,,,,,
+792,TR,TUR,Turkiye,AS,298795,Republic of Turkiye,Turkiye,TR
+180,CD,COD,The DROC,AF,203312,Democratic Republic of the Congo,DR Congo,CD
+180,CD,COD,DR Congo,AF,203312,Democratic Republic of the Congo,DR Congo,CD
+180,CD,COD,Zaire,AF,203312,Democratic Republic of the Congo,DR Congo,CD
+180,CD,COD,Congo-Kinshasa,AF,203312,Democratic Republic of the Congo,DR Congo,CD
+180,CD,COD,DRC,AF,203312,Democratic Republic of the Congo,DR Congo,CD
+248,AX,ALA,?land Islands,EU,661882,Finland,Finland,FI
+336,VA,VAT,Italy ,EU,3164670,Italy ,Italy,IT
+336,VA,VAT,Holy See,EU,3164670,Italy ,Italy,IT
+336,VA,VAT,See of Rome,EU,3164670,Italy ,Italy,IT
+336,VA,VAT,Vatican City,EU,3164670,Italy ,Italy,IT
+336,VA,VAT,Vatican,EU,3164670,Italy ,Italy,IT
+336,VA,VAT,Vatican City State,EU,3164670,Italy ,Italy,IT
+499,ME,MNE,Montenegro,EU,3194884,Montenegro,Montenegro,ME
+792,TR,TUR,Republic of Turkiye,AS,298795,Republic of Turkiye,Turkiye,TR
+132,CV,CPV,Republic of Cabo Verde,AF,3374766,Republic of Cabo Verde,Cape Verde,CV
+132,CV,CPV,Cabo Verde,AF,3374766,Republic of Cabo Verde,Cape Verde,CV
+132,CV,CPV,Cape Verde,AF,3374766,Republic of Cabo Verde,Cape Verde,CV
+0,XK,XKX,Republic of Kosovo,EU,831053,The Republic of Serbia,Serbia,RS
+0,XK,XKX,Kosovo,EU,831053,The Republic of Serbia,Serbia,RS
+,,,The former Yugoslav Republic of,,,,,
+807,MK,MKD,Former Yugoslav Republic of Macedonia,EU,718075,Republic of North Macedonia,North Macedonia,MK
+807,MK,MKD,North Macedonia,EU,718075,Republic of North Macedonia,North Macedonia,MK
+807,MK,MKD,The former Yugoslav Republic of Macedonia,EU,718075,Republic of North Macedonia,North Macedonia,MK
+807,MK,MKD,Republic of North Macedonia,EU,718075,Republic of North Macedonia,North Macedonia,MK
+807,MK,MKD,Macedonia,EU,718075,Republic of North Macedonia,North Macedonia,MK
+178,CG,COG,The Congo,AF,2260494,Republic of the Congo,Republic of the Congo,CG
+,,,Congo,,,,,
+178,CG,COG,Congo Republic,AF,2260494,Republic of the Congo,Republic of the Congo,CG
+178,CG,COG,Congo-Brazzaville,AF,2260494,Republic of the Congo,Republic of the Congo,CG
+178,CG,COG,Repubilika ya Kongo,AF,2260494,Republic of the Congo,Republic of the Congo,CG
+178,CG,COG,Kongo,AF,2260494,Republic of the Congo,Republic of the Congo,CG
+178,CG,COG,Republic of the Congo,AF,2260494,Republic of the Congo,Republic of the Congo,CG
+178,CG,COG,Republique du Congo,AF,2260494,Republic of the Congo,Republic of the Congo,CG
+,,,Korea,,,,,
+678,ST,STP,São Tomé and Príncipe,AF,2410758,The Democratic Republic of Sao Tome and Principe,São Tomé and Príncipe,ST
+678,ST,STP,Sao Tome and Principe,AF,2410758,The Democratic Republic of Sao Tome and Principe,São Tomé and Príncipe,ST
+678,ST,STP,The Democratic Republic of Sao Tome and Principe,AF,2410758,The Democratic Republic of Sao Tome and Principe,São Tomé and Príncipe,ST
+674,SM,SMR,The Republic of San Marino,EU,3168068,The Republic of San Marino,San Marino,SM
+686,SN,SEN,The Republic of Senegal,AF,2245662,The Republic of Senegal,Senegal,SN
+686,SN,SEN,Senegal,AF,2245662,The Republic of Senegal,Senegal,SN
+882,WS,WSM,Western Samoa,OC,4034894,Independent State of Samoa,Samoa,WS
+690,SC,SYC,The Republic of Seychelles,AF,241170,The Republic of Seychelles,Seychelles,SC
+690,SC,SYC,Seychelles,AF,241170,The Republic of Seychelles,Seychelles,SC
+694,SL,SLE,Sierra Leone,AF,2403846,The Republic of Sierra Leone,Sierra Leone,SL
+694,SL,SLE,The Republic of Sierra Leone,AF,2403846,The Republic of Sierra Leone,Sierra Leone,SL
+702,SG,SGP,The Republic of Singapore,AS,1880251,The Republic of Singapore,Singapore,SG
+702,SG,SGP,Singapore,AS,1880251,The Republic of Singapore,Singapore,SG
+705,SI,SVN,The Republic of Slovenia,EU,3190538,The Republic of Slovenia,Slovenia,SI
+705,SI,SVN,Slovenia,EU,3190538,The Republic of Slovenia,Slovenia,SI
+710,ZA,ZAF,South Africa,AF,953987,The Republic of South Africa,South Africa,ZA
+710,ZA,ZAF,The Republic of South Africa,AF,953987,The Republic of South Africa,South Africa,ZA
+728,SS,SSD,South Sudan,AF,7909807,The Republic of South Sudan,South Sudan,SS
+728,SS,SSD,The Republic of South Sudan,AF,7909807,The Republic of South Sudan,South Sudan,SS
+740,SR,SUR,Suriname,SA,3382998,The Republic of Suriname,Suriname,SR
+740,SR,SUR,The Republic of Suriname,SA,3382998,The Republic of Suriname,Suriname,SR
+762,TJ,TJK,The Republic of Tajikistan,AS,1220409,The Republic of Tajikistan,Tajikistan,TJ
+762,TJ,TJK,Tajikistan,AS,1220409,The Republic of Tajikistan,Tajikistan,TJ
+270,GM,GMB,Gambia,AF,2413451,The Republic of The Gambia,Gambia,GM
+270,GM,GMB,The Republic of The Gambia,AF,2413451,The Republic of The Gambia,Gambia,GM
+780,TT,TTO,The Republic of Trinidad and Tobago,NA,3573591,The Republic of Trinidad and Tobago,Trinidad and Tobago,TT
+780,TT,TTO,Trinidad and Tobago,NA,3573591,The Republic of Trinidad and Tobago,Trinidad and Tobago,TT
+788,TN,TUN,The Republic of Tunisia,AF,2464461,The Republic of Tunisia,Tunisia,TN
+788,TN,TUN,Tunisia,AF,2464461,The Republic of Tunisia,Tunisia,TN
+792,TR,TUR,The Republic of Turkey,AS,298795,Republic of Turkiye,Turkiye,TR
+792,TR,TUR,Turkey,AS,298795,Republic of Turkiye,Turkiye,TR
+584,MH,MHL,The Republic of the Marshall Islands,OC,2080185,The Republic of the Marshall Islands,Marshall Islands,MH
+584,MH,MHL,Marshall Islands,OC,2080185,The Republic of the Marshall Islands,Marshall Islands,MH
+562,NE,NER,The Republic of the Niger,AF,2440476,The Republic of the Niger,Niger,NE
+562,NE,NER,Niger,AF,2440476,The Republic of the Niger,Niger,NE
+608,PH,PHL,The Republic of the Philippines,AS,1694008,The Republic of the Philippines,Philippines,PH
+608,PH,PHL,Philippines,AS,1694008,The Republic of the Philippines,Philippines,PH
+729,SD,SDN,Sudan,AF,366755,The Republic of the Sudan,Sudan,SD
+729,SD,SDN,The Republic of the Sudan,AF,366755,The Republic of the Sudan,Sudan,SD
+800,UG,UGA,The Republic of Uganda,AF,226074,The Republic of Uganda,Uganda,UG
+800,UG,UGA,Uganda,AF,226074,The Republic of Uganda,Uganda,UG
+860,UZ,UZB,Uzbekistan,AS,1512440,The Republic of Uzbekistan,Uzbekistan,UZ
+860,UZ,UZB,The Republic of Uzbekistan,AS,1512440,The Republic of Uzbekistan,Uzbekistan,UZ
+548,VU,VUT,Vanuatu,OC,2134431,The Republic of Vanuatu,Vanuatu,VU
+548,VU,VUT,The Republic of Vanuatu,OC,2134431,The Republic of Vanuatu,Vanuatu,VU
+887,YE,YEM,Yemen,AS,69543,The Republic of Yemen,Yemen,YE
+887,YE,YEM,The Republic of Yemen,AS,69543,The Republic of Yemen,Yemen,YE
+894,ZM,ZMB,The Republic of Zambia,AF,895949,The Republic of Zambia,Zambia,ZM
+894,ZM,ZMB,Zambia,AF,895949,The Republic of Zambia,Zambia,ZM
+716,ZW,ZWE,Zimbabwe,AF,878675,The Republic of Zimbabwe,Zimbabwe,ZW
+716,ZW,ZWE,The Republic of Zimbabwe,AF,878675,The Republic of Zimbabwe,Zimbabwe,ZW
+643,RU,RUS,The Russian Federation,EU,2017370,The Russian Federation,Russia,RU
+643,RU,RUS,Russia,EU,2017370,The Russian Federation,Russia,RU
+703,SK,SVK,Slovakia,EU,3057568,The Slovak Republic,Slovakia,SK
+703,SK,SVK,The Slovak Republic,EU,3057568,The Slovak Republic,Slovakia,SK
+232,ER,ERI,The State of Eritrea,AF,338010,The State of Eritrea,Eritrea,ER
+232,ER,ERI,Eritrea,AF,338010,The State of Eritrea,Eritrea,ER
+376,IL,ISR,Israel,AS,294640,The State of Israel,Israel,IL
+376,IL,ISR,The State of Israel,AS,294640,The State of Israel,Israel,IL
+414,KW,KWT,Kuwait,AS,285570,The State of Kuwait,Kuwait,KW
+414,KW,KWT,The State of Kuwait,AS,285570,The State of Kuwait,Kuwait,KW
+434,LY,LBY,The State of Libya,AF,2215636,The State of Libya,Libya,LY
+434,LY,LBY,Libya,AF,2215636,The State of Libya,Libya,LY
+496,MN,MNG,The State of Mongolia,AS,2029969,The State of Mongolia,Mongolia,MN
+496,MN,MNG,Mongolia,AS,2029969,The State of Mongolia,Mongolia,MN
+634,QA,QAT,The State of Qatar,AS,289688,The State of Qatar,Qatar,QA
+634,QA,QAT,Qatar,AS,289688,The State of Qatar,Qatar,QA
+512,OM,OMN,The Sultanate of Oman,AS,286963,The Sultanate of Oman,Oman,OM
+512,OM,OMN,Oman,AS,286963,The Sultanate of Oman,Oman,OM
+756,CH,CHE,Switzerland,EU,2658434,The Swiss Confederation,Switzerland,CH
+756,CH,CHE,The Swiss Confederation,EU,2658434,The Swiss Confederation,Switzerland,CH
+760,SY,SYR,The Syrian Arab Republic,AS,163843,The Syrian Arab Republic,Syria,SY
+760,SY,SYR,Syria,AS,163843,The Syrian Arab Republic,Syria,SY
+768,TG,TGO,The Togolese Republic,AF,2363686,The Togolese Republic,Togo,TG
+768,TG,TGO,Togo,AF,2363686,The Togolese Republic,Togo,TG
+174,KM,COM,Comoros,AF,921929,The Union of the Comoros,Comoros,KM
+174,KM,COM,The Union of the Comoros,AF,921929,The Union of the Comoros,Comoros,KM
+484,MX,MEX,Mexico,NA,3996063,The United Mexican States,Mexico,MX
+484,MX,MEX,The United Mexican States,NA,3996063,The United Mexican States,Mexico,MX
+834,TZ,TZA,Tanzania,AF,149590,The United Republic of Tanzania,Tanzania,TZ
+834,TZ,TZA,The United Republic of Tanzania,AF,149590,The United Republic of Tanzania,Tanzania,TZ
+630,PR,PRI,Puerto Rico,NA,4566966,The United States of America,United States,US
+840,US,USA,United States of America,NA,6252001,The United States of America,United States,US
+840,US,USA,The United States of America,NA,6252001,The United States of America,United States,US
+580,MP,MNP,The United States of America,OC,4041468,The United States of America,United States,US
+630,PR,PRI,The United States of America,NA,4566966,The United States of America,United States,US
+16,AS,ASM,American Samoa,OC,5880801,The United States of America,United States,US
+316,GU,GUM,Guam,OC,4043988,The United States of America,United States,US
+581,UM,UMI,United States Minor Outlying Islands,OC,5854968,The United States of America,United States,US
+840,US,USA,United States,NA,6252001,The United States of America,United States,US
+850,VI,VIR,U.S. Virgin Islands,NA,4796775,The United States of America,United States,US
+882,WS,WSM,Samoa,OC,4034894,Independent State of Samoa,Samoa,WS
+581,UM,UMI,Baker Island,OC,5854968,The United States of America,United States,US
+581,UM,UMI,Howland Island,OC,5854968,The United States of America,United States,US
+581,UM,UMI,Jarvis Island,OC,5854968,The United States of America,United States,US
+581,UM,UMI,Johnston Atoll,OC,5854968,The United States of America,United States,US
+580,MP,MNP,Northern Mariana Islands,OC,4041468,The United States of America,United States,US
+581,UM,UMI,The United States of America,OC,5854968,The United States of America,United States,US
+316,GU,GUM,The United States of America,OC,4043988,The United States of America,United States,US
+850,VI,VIR,The United States of America,NA,4796775,The United States of America,United States,US
+16,AS,ASM,The United States of America,OC,5880801,The United States of America,United States,US
+581,UM,UMI,Kingman Reef,OC,5854968,The United States of America,United States,US
+581,UM,UMI,Midway Atoll,OC,5854968,The United States of America,United States,US
+581,UM,UMI,Palmyra Atoll,OC,5854968,The United States of America,United States,US
+581,UM,UMI,Wake Island,OC,5854968,The United States of America,United States,US
+840,US,USA,USA,NA,6252001,The United States of America,United States,US
+840,US,USA,America,NA,6252001,The United States of America,United States,US
+840,US,USA,US,NA,6252001,The United States of America,United States,US
+840,US,USA,Kingman Reef,NA,6252001,The United States of America,United States,US
+840,US,USA,Johnston Atoll,NA,6252001,The United States of America,United States,US
+840,US,USA,Palmyra Atoll,NA,6252001,The United States of America,United States,US
+840,US,USA,Wake Island,NA,6252001,The United States of America,United States,US
+840,US,USA,Midway Islands,NA,6252001,The United States of America,United States,US
+840,US,USA,Navassa Island,NA,6252001,The United States of America,United States,US
+840,US,USA,Line Islands,NA,6252001,The United States of America,United States,US
+850,VI,VIR,America,NA,4796775,The United States of America,United States,US
+16,AS,ASM,The Territory of American Samoa,OC,5880801,The United States of America,United States,US
+850,VI,VIR,United States Virgin Islands,NA,4796775,The United States of America,United States,US
+16,AS,ASM,America,OC,5880801,The United States of America,United States,US
+316,GU,GUM,The Territory of Guam,OC,4043988,The United States of America,United States,US
+580,MP,MNP,The Commonwealth of the Northern Mariana Islands,OC,4041468,The United States of America,United States,US
+630,PR,PRI,The Commonwealth of Puerto Rico,NA,4566966,The United States of America,United States,US
+795,TM,TKM,Turkmenistan,AS,1218197,Turkmenistan,Turkmenistan,TM
+798,TV,TUV,Tuvalu,OC,2110297,Tuvalu,Tuvalu,TV
+804,UA,UKR,Ukraine,EU,690791,Ukraine,Ukraine,UA
+92,VG,VGB,British Virgin Islands,NA,3577718,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+826,GB,GBR,United Kingdom,EU,2635167,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+826,GB,GBR,England,EU,2635167,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+826,GB,GBR,Northern Ireland,EU,2635167,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+826,GB,GBR,Wales,EU,2635167,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+826,GB,GBR,Scotland,EU,2635167,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+292,GI,GIB,Gibraltar,EU,2411586,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+832,JE,JEY,Jersey,EU,3042142,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+612,PN,PCN,Pitcairn,OC,4030699,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+92,VG,VGB,Virgin Islands,NA,3577718,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+92,VG,VGB,British Overseas Territory,NA,3577718,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+92,VG,VGB,Great Britain,NA,3577718,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+92,VG,VGB,UK,NA,3577718,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+92,VG,VGB,United Kingdom,NA,3577718,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+92,VG,VGB,United Kingdom of Great Britain and Northern Ireland,NA,3577718,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+238,FK,FLK,Islas Malvinas,SA,3474414,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+826,GB,GBR,UK,EU,2635167,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+826,GB,GBR,U.K.,EU,2635167,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+826,GB,GBR,Britain,EU,2635167,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+831,GG,GGY,The Bailiwick of Guernsey,EU,3042362,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+831,GG,GGY,Crown dependencies,EU,3042362,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+831,GG,GGY,Great Britain,EU,3042362,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+833,IM,IMN,British Crown,EU,3042225,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+832,JE,JEY,The Bailiwick of Jersey,EU,3042142,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+832,JE,JEY,British Crown,EU,3042142,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+612,PN,PCN,Henderson,OC,4030699,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+612,PN,PCN,Ducie and Oeno Islands,OC,4030699,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+612,PN,PCN,Pitcairn Islands,OC,4030699,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+238,FK,FLK,Falkland Islands (Islas Malvinas),SA,3474414,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+660,AI,AIA,Anguilla,NA,3573511,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+238,FK,FLK,Falkland Islands,SA,3474414,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+239,GS,SGS,South Georgia and the South Sandwich Islands,AN,3474415,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+136,KY,CYM,Cayman Islands,NA,3580718,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+831,GG,GGY,United Kingdom of Great Britain and Northern Ireland,EU,3042362,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+86,IO,IOT,United Kingdom of Great Britain and Northern Ireland,AS,1282588,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+60,BM,BMU,Bermuda,NA,3573345,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+831,GG,GGY,Guernsey,EU,3042362,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+833,IM,IMN,Isle of Man,EU,3042225,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+86,IO,IOT,British Indian Ocean Territory,AS,1282588,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+500,MS,MSR,Montserrat,NA,3578097,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+654,SH,SHN,Saint Helena,AF,3370751,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+796,TC,TCA,United Kingdom of Great Britain and Northern Ireland,NA,3576916,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+292,GI,GIB,United Kingdom of Great Britain and Northern Ireland,EU,2411586,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+832,JE,JEY,United Kingdom of Great Britain and Northern Ireland,EU,3042142,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+660,AI,AIA,United Kingdom of Great Britain and Northern Ireland,NA,3573511,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+60,BM,BMU,United Kingdom of Great Britain and Northern Ireland,NA,3573345,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+833,IM,IMN,United Kingdom of Great Britain and Northern Ireland,EU,3042225,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+239,GS,SGS,United Kingdom of Great Britain and Northern Ireland,AN,3474415,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+238,FK,FLK,United Kingdom of Great Britain and Northern Ireland,SA,3474414,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+654,SH,SHN,United Kingdom of Great Britain and Northern Ireland,AF,3370751,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+500,MS,MSR,United Kingdom of Great Britain and Northern Ireland,NA,3578097,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+826,GB,GBR,United Kingdom of Great Britain and Northern Ireland,EU,2635167,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+612,PN,PCN,United Kingdom of Great Britain and Northern Ireland,OC,4030699,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+136,KY,CYM,United Kingdom of Great Britain and Northern Ireland,NA,3580718,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+239,GS,SGS,South Georgia and the South Sandwich,AN,3474415,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+796,TC,TCA,Turks and Caicos Islands,NA,3576916,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+654,SH,SHN,Ascension and Tristan da Cunha,AF,3370751,United Kingdom of Great Britain and Northern Ireland,United Kingdom,GB
+156,CN,CHN,People's Republic of China,AS,1814991,The People's Republic of China,China,CN
