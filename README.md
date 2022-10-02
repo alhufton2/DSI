@@ -1,7 +1,7 @@
 # DSI
 Scripts and test files for exploring and visualizing data on the global use and provision of digital sequence information (DSI). Data obtained from the WiLDSI Data Portal (https://wildsi-dl.ipk-gatersleben.de/).
 
-
+The standard WiLDSI country table (2022-08-15) has been modified to recognize the following additional country names. 
 
 ### country table additions
 * "The Netherlands" --> Netherlands
