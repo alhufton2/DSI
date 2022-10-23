@@ -9,8 +9,7 @@ use Carp qw< croak >;
 use Time::Piece;
 
 # For debugging
-my $monitor = 'Benin'; # set to 0 to suppress LOG messages
-my $log_file = "scatter_processing_log.csv";
+my $monitor = 'Benin'; # set to 0 to suppress STDERR messages
 
 ### Configure temporal range ###
 my $start_date = Time::Piece->strptime('1985-01-01', '%Y-%m-%d');
@@ -74,6 +73,7 @@ while ( $current_date <= $end_date ) {
 			}
 		}
 		push @$drow, $uses_from_num, $provides_to_num;
+		#print STDERR "On " . $current_date->datetime . " $_ provided DSI to $provides_to_num countries and used DSI from $uses_from_num countries\n";
 	}
 	$current_date = $current_date->add_months(1);
 	$csv->say($fh, $drow); 
@@ -133,9 +133,11 @@ sub readENA {
 			}
 			
 			# Record information on primary references
+			# This is stupidly inefficient for any sequences that have multiple primary lit IDs
 			if ($row->{PRIMARY_PMID}) {
 				foreach my $pmid ( split(/;/, $row->{PRIMARY_PMID}) ) {	
 					$pmid_local{$pmid}->{$row->{ACCESSION}} = 1;
+					#print STDERR "recording " . $pmid . " for " . $row->{ACCESSION} . "\n";
 				}
 			}
 			if ($row->{PRIMARY_PMCID}) {
@@ -146,6 +148,7 @@ sub readENA {
 			if ($row->{PRIMARY_DOI}) {
 				foreach my $doi ( split(/;/, $row->{PRIMARY_DOI}) ) {
 					$doi_local{$doi}->{$row->{ACCESSION}} = 1;
+					#print STDERR "recording " . $doi . " for " . $row->{ACCESSION} . "\n";
 				}
 			}
 		}
@@ -159,14 +162,8 @@ sub readPMC {
 	
 	my $csv = Text::CSV->new ({ binary => 1, auto_diag => 1, skip_empty_rows => 1 });
 	open my $fh, "<:encoding(utf8)", $filepath or die "$filepath: $!";
-	open my $log_fh, ">:encoding(utf8)", $log_file or die "$log_file: $!";
 	
-	print $log_fh "PROVIDER_COUNTRY,USER_COUNTRY,IDPMC,DATE\n";
-	
-	# %primary_check helps reduce redundant primary ref searches
-	# It assumes that rows with the same COUNTRY and IDPMC will have identical SECONDARY PMID, PMCID and DOI information
-	# meaning that primary references checks can be skipped for some reference rows
-	my %primary_check; 
+	my %primary_check; # helps reduce redundant primary ref searches
 	
 	$csv->column_names( $csv->getline($fh) );
 	while ( my $row = $csv->getline_hr($fh) ) {
@@ -175,7 +172,7 @@ sub readPMC {
 			
 			# Create a hash listing of all accession numbers associated with this reference line
 			my %accessions;
-			# This should always be unique and therefore doesn't need a foreach
+			# This is always unique and therefore doesn't need a foreach
 			if ( $row->{ACCESSION} ) {
 				$accessions{$row->{ACCESSION}} = 1;
 			}
@@ -198,7 +195,6 @@ sub readPMC {
 			my $date_obj = Time::Piece->strptime($row->{FIRST_PUB_DATE}, '%d-%b-%y');
 			
 			# Compile a list of the provider countries
-			# accessions may have multiple provider countries
 			my %provider_countries;
 			foreach my $acc ( keys %accessions ) {
 				if ( $sequences{$acc} ) {
@@ -208,7 +204,6 @@ sub readPMC {
 				}
 			}
 			
-			# A reference row may, in principle, have multiple countries. I'm not sure if this ever occurs. 
 			foreach ( split(/;/, $row->{COUNTRY}) ) {
 				
 				# Convert country name
@@ -227,8 +222,7 @@ sub readPMC {
 					# Record the earliest date at which the user country used DSI from the provider country
 					# Checks first to see if the pair is already defined, and then checks if it already has an earlier use date
 					# If either check fails, record this use-instance as the earliest for the pair
-					my $log_line = join(',',$provider_country,$user_country,$row->{IDPMC},$date_obj->datetime);
-					print $log_fh "$log_line\n" if ( $provider_country eq $monitor || $user_country eq $monitor );
+					print STDERR "$provider_country identified as provider to $user_country on PMC reference " . $row->{IDPMC} . "\n" if ( $provider_country eq $monitor || $user_country eq $monitor );
 
 					unless ( $country_provides_to{$provider_country}->{$user_country} ) {
 						$country_provides_to{$provider_country}->{$user_country} = $date_obj;
