@@ -28,18 +28,10 @@ print <<EOF;
 <h2>Relationship between DSI provision and use across time</h2>
 <p>Recreation of chart 6.1, using the 15 August 2022 dataset version. 
 The lines represent the progression of the DSI provision and use values for each country from 1986 to 2022.</p>
-<div class="results">
-	<p><span style="background-color: rgba(252,174,30,0.9); color: white; padding: 2px;">BRICS</span>
-	<span style="background-color: rgba(153,255,51,0.9); color: black; padding: 2px;">G77</span>
-	<span style="background-color: rgba(0,51,204,0.9); color: white; padding: 2px;">OECD</span></p>
-	<canvas style="max-width: 800px; max-height: 800px;" id="myChart" aria-label="A chart showing the DSI provision and use histories of countries" role="img"></canvas>
-	<div class="chart-actions">
-	  <button style="font-size: 18px" onclick="updateChart()">Replay</button>
-	  <button style="font-size: 18px" onclick="updateChartChangeSpeed(10)">Fast</button>
-	  <button style="font-size: 18px" onclick="updateChartChangeSpeed(100)">Normal</button>
-	  <button style="font-size: 18px" onclick="updateChartChangeSpeed(500)">Slow</button>
-	</div>
-</div>
+<p><span style="background-color: rgba(252,174,30,0.9); color: white; padding: 2px;">BRICS</span>
+<span style="background-color: rgba(153,255,51,0.9); color: black; padding: 2px;">G77</span>
+<span style="background-color: rgba(0,51,204,0.9); color: white; padding: 2px;">OECD</span></p>
+<canvas style="max-width: 800px; max-height: 800px;" id="myChart" aria-label="A chart showing the DSI provision and use histories of countries" role="img"></canvas>
 EOF
 
 &drawChart();
@@ -75,23 +67,13 @@ sub readProcessedData {
 	
 	$csv->column_names( $csv->getline($fh) );
 	while ( my $row = $csv->getline_hr($fh) ) {
-		
-	    # Parse the date information and save some labels
-	    ### This part of the code establishes the date range and granularity.
-	    ### This really should be moved elsewhere as some kind of sensible config
-	    ### variables
-		my $datetime = Time::Piece->strptime($row->{Date},'%Y-%m-%dT%T');
-		next if ($datetime->year == 1985); # skip the first year, since there is nothing happening
-		next unless ($datetime->mon == 1 || $datetime->mon == 6); # Only plot half-year increments
-		my $date_label = $datetime->ymd;
-		push @dates, "\"$date_label\"";
-		
 		# foreach element in row
+		next if ( $row->{Date} =~ /^1985/ ); # skip the first year, since there is nothing happening
 		foreach my $key ( keys %{$row} ) {
 			my $country;
-			
-			# Process date information
 			if ( $key eq 'Date' ) {
+				push @dates, $row->{Date};
+				# for now, do nothing with the dates
 				next;
 			} elsif ( $key =~ /^(.*?)\s+\[uses from\]$/ ) {
 				$country = $1;
@@ -127,7 +109,6 @@ sub drawChart {
     my $data_string = '';
     my $k = 0; # color selector
     my $color_max = @bordercolors;
-    my $date_string = join(',', @dates);
     
     foreach my $group (@groups_to_plot) {
     	foreach my $country ( keys %{$country_grps{$group}} ) {
@@ -136,9 +117,7 @@ sub drawChart {
 				# start a new data series
 				$data_string .= "
 				{  label: '$country ($group)',
-				   labels: [$date_string],
 				   showLine: 'true',
-				   yAxisID: 'y',
 				   borderColor: '$bordercolors[$k]',
 				   backgroundColor: '$bgcolors[$k]',
 				   data: [";
@@ -147,6 +126,7 @@ sub drawChart {
 				my ($x, $y);
 				for ( 0 .. $max ) {
 					# next if ( $i && $x == $data{$country}->{use}->[$_] && $y == $data{$country}->{provide}->[$_] );
+					next if ( $_ % 5 );
 					$x = $data{$country}->{use}->[$_];
 					$y = $data{$country}->{provide}->[$_];
 					$data_string .= "," if $_;
@@ -158,46 +138,28 @@ sub drawChart {
 		# increment color
 		++$k;
 		$k = 0 if $k == $color_max;
+		
     }
-    
-
-	# start a special data series to track animation progress
-	$data_string .= "
-	{  label: 'date',
-	   labels: [$date_string],
-	   showLine: 'true',
-	   yAxisID: 'y2',
-	   borderColor: '$bordercolors[$k]',
-	   backgroundColor: '$bgcolors[$k]',
-	   data: [";
-	my $i = 0; 
-	foreach my $date ( @dates  ) {
-		my $x = 199;
-		my $y = substr($date, 1, 4);
-		$data_string .= "," if $i;
-		++$i;
-		$data_string .= "{x: $x, y: $y}";
-	}
-	$data_string .= "]} "; #closes data
     
     ## print the Chart.js script ##
     print <<EOF;
 <script>
-	Chart.defaults.color = "rgb(250,250,250)";
+Chart.defaults.color = "rgb(0,0,0)";
 
-	var delayBetweenPoints = 100;
+const delayBetweenPoints = 500;
+// const previousY = (ctx) => ctx.index === 0 ? ctx.chart.scales.y.getPixelForValue(0) : ctx.chart.getDatasetMeta(ctx.datasetIndex).data[ctx.index - 1].getProps(['y'], true).y;
 
-	const config = {
-	  type: 'scatter',
-	  data: {
-		  datasets: [$data_string]
-	  },
-	
-	  options: {
-		locale: 'en-US',
-		aspectRatio: 1,
-		layout: { padding: 10 },
-		animation: {
+var ctx = document.getElementById('myChart').getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'scatter',
+  data: {
+      datasets: [$data_string]},
+
+      options: {
+        locale: 'en-US',
+        aspectRatio: 1,
+        layout: { padding: 10 },
+        animation: {
 		  x: {
 			type: 'number',
 			easing: 'linear',
@@ -225,94 +187,56 @@ sub drawChart {
 			}
 		  }
 		},
-		plugins: {
-			tooltip: {
-				mode: 'nearest', 
-				callbacks: {
-					label: function(ctx) {
-						let timelabel = ctx.dataset.labels[ctx.dataIndex];
-						return [
-                			ctx.dataset.label + ': ' + timelabel,
+        plugins: {
+            tooltip: {
+                mode: 'nearest', 
+                callbacks: {
+                	label: function(ctx) {
+                		return [
+                			ctx.dataset.label,
                 			'Uses data from: ' + ctx.parsed.x, 
                 			'Provides data to: ' + ctx.parsed.y
                 		]
-					}
-				}
-			}, 
-			legend: {
-				display: false,
-			},
-		},
-		elements: { point: { hitRadius: 10, radius: 0 } },
-		scales: {
-		  x: {
-			 type: '$x_scale',
-			 position: 'bottom',
-			 min: 0,
-			 max: 200,
-			 title: {
-				text: '$xaxis_label',
-				display: 'true',
-				font: { size: 16 }
-			 },
-			 grid: { 
-				color: 'rgb(50,50,50)'
-			 }
-		  },
-		  y: {
-			 type: 'linear',
-			 position: 'left',
-			 suggestedMin: 0, 
-			 max: 200,
-			 title: {
-				text: '$yaxis_label',
-				display: 'true',
-				font: { size: 16 }
-			 },
-			 grid: { 
-				color: 'rgb(50,50,50)'
-			 }
-		  },
-		  y2: {
-		     type: 'linear',
-		     position: 'right',
-		     min: 1986,
-		     max: 2022,
-		     title: {
-				text: 'animation progress',
-				display: 'true',
-				font: { size: 16 }
-			 },
-		     grid: {
-		     	drawOnChartArea: false
-		     }
-		  }
-	    }
-	  }
-	};
-	
-	let myChart = new Chart(
-		document.getElementById('myChart'),
-		config
-	);
-	
-	function updateChart() {
-		myChart.destroy();
-		myChart = new Chart(
-			document.getElementById('myChart'),
-			config
-		);
-	}
-	
-	function updateChartChangeSpeed(duration) {
-		myChart.destroy();
-		delayBetweenPoints = duration;
-		myChart = new Chart(
-			document.getElementById('myChart'),
-			config
-		);
-	}
-	
+                	}
+                }
+            }, 
+            legend: {
+                display: false,
+            },
+        },
+        elements: { point: { hitRadius: 10, radius: 0 } },
+        scales: {
+          x: {
+             type: '$x_scale',
+             position: 'bottom',
+             min: 0,
+             max: 200,
+             title: {
+                text: '$xaxis_label',
+                display: 'true',
+                font: { size: 16 }
+             },
+             grid: { 
+                color: 'rgb(50,50,50)'
+             }
+          },
+          y: {
+             type: 'linear',
+             position: 'left',
+             suggestedMin: 0, 
+             max: 200,
+             title: {
+                text: '$yaxis_label',
+                display: 'true',
+                font: { size: 16 }
+             },
+             grid: { 
+                color: 'rgb(50,50,50)'
+             }
+          }
+        }
+    }
+});
 </script>
 EOF
 }
@@ -338,7 +262,7 @@ sub start_html {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.1/chart.min.js"></script>
-<link rel="stylesheet" href="https://alhufton.com/css/tool.css">
+<link rel="stylesheet" href="../css/tool.css">
 </head>
 <body>
     
