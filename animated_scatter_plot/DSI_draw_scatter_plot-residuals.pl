@@ -12,7 +12,7 @@ use Time::Piece;
 my $usage = "$0 country_group_file data_table";
 unless ( $ARGV[0] && $ARGV[1] ) { die "\n$usage\n\n" }
 
-my @groups_to_plot = ('BRICS','G77', 'OECD');
+my @groups_to_plot = ('BRICS','G77','OECD');
 
 # Read the country group file
 my %country_grps = &readCountryGrps($ARGV[0]); # group->country simplified name->1
@@ -24,25 +24,21 @@ my @dates;
 
 # Output a chart
 &start_html();
-print <<EOF;
-<div class="header">
-	<h1>Relationship between DSI provision and use across time</h1>
-	<p>Recreation of chart 6.1, using the 15 August 2022 dataset version. 
-	The lines represent the progression of the DSI provision and use values for each country from 1986 to 2022.</p>
-</div>
-<div class="row">
-	<div class="column-main">
-		<div class="results">
-			<canvas style="max-width: 800px; max-height: 800px;" id="myChart" aria-label="A chart showing the DSI provision and use histories of countries" role="img"></canvas>
-		</div>
-	</div>
-	<div class="column-side">
-		<div class="chart-actions" style="padding: 80 0 0 0;">
-		  <button style="font-size: 18px" onclick="updateChart()">Replay</button></br>
-		  <button style="font-size: 18px" onclick="updateChartChangeSpeed(10)">Fast</button></br>
-		  <button style="font-size: 18px" onclick="updateChartChangeSpeed(100)">Normal</button></br>
-		  <button style="font-size: 18px" onclick="updateChartChangeSpeed(500)">Slow</button>
-		</div>
+print <<EOF; 
+<h2>Relationship between DSI provision and use across time</h2>
+<p>Recreation of chart 6.1, using the 15 August 2022 dataset version. 
+The line here charts how much a country's balance of DSI provision and use varies
+over time from an ideal of total equity, where a country always provides and uses from the 
+same number of countries. The chart covers DSI provision use from 1986 to 2022. 
+A positive value indicates a country is providing more than it is using, while a negative value
+indicates a country is using more than providing.</p>
+<div class="results">
+	<canvas style="max-width: 1500px; max-height: 800px;" id="myChart" aria-label="A chart showing the DSI provision and use histories of countries" role="img"></canvas>
+	<div class="chart-actions">
+	  <button style="font-size: 18px" onclick="updateChart()">Replay</button>
+	  <button style="font-size: 18px" onclick="updateChartChangeSpeed(10)">Fast</button>
+	  <button style="font-size: 18px" onclick="updateChartChangeSpeed(100)">Normal</button>
+	  <button style="font-size: 18px" onclick="updateChartChangeSpeed(500)">Slow</button>
 	</div>
 </div>
 EOF
@@ -88,8 +84,7 @@ sub readProcessedData {
 		my $datetime = Time::Piece->strptime($row->{Date},'%Y-%m-%dT%T');
 		next if ($datetime->year == 1985); # skip the first year, since there is nothing happening
 		next unless ($datetime->mon == 1 || $datetime->mon == 6); # Only plot half-year increments
-		my $date_label = $datetime->monname . " " . $datetime->year;
-		push @dates, $date_label;
+		push @dates, $datetime;
 		
 		# foreach element in row
 		foreach my $key ( keys %{$row} ) {
@@ -121,8 +116,8 @@ sub drawChart {
     my $x_min = 0;
 
     # Axis labels
-    my $xaxis_label = "Uses data from x countries";
-    my $yaxis_label = "Provides data to y countries";
+    my $xaxis_label = "Year";
+    my $yaxis_label = "Residual from equal provision and use";
     
     # Define the colors that will be used for the data 
     my @bordercolors = chart_colors(0.9);
@@ -132,20 +127,15 @@ sub drawChart {
     my $data_string = '';
     my $k = 0; # color selector
     my $color_max = @bordercolors;
+    my $date_string = join(',', @dates);
     
     foreach my $group (@groups_to_plot) {
     	foreach my $country ( keys %{$country_grps{$group}} ) {
     		if ( $data{$country}->{use} ) {
-    			my $date_string;
-    			foreach my $date (@dates) {
-    				$date_string .= "\"$country ($date)\",";
-    			}
-    			chop $date_string;
 			
 				# start a new data series
 				$data_string .= "
 				{  label: '$group',
-				   labels: [$date_string],
 				   showLine: 'true',
 				   yAxisID: 'y',
 				   borderColor: '$bordercolors[$k]',
@@ -155,8 +145,13 @@ sub drawChart {
 				my $max = @{$data{$country}->{use}} - 1;
 				my ($x, $y);
 				for ( 0 .. $max ) {
-					$x = $data{$country}->{use}->[$_];
-					$y = $data{$country}->{provide}->[$_];
+					if ($dates[$_]->mon == 1 ) {
+						$x = $dates[$_]->year;
+					} else {
+						$x = $dates[$_]->year . ".5";
+					}
+					$y = $data{$country}->{provide}->[$_] - (($data{$country}->{provide}->[$_] + $data{$country}->{use}->[$_] ) / 2 );
+
 					$data_string .= "," if $_;
 					$data_string .= "{x: $x, y: $y}";
 				}
@@ -210,11 +205,10 @@ sub drawChart {
 				mode: 'nearest', 
 				callbacks: {
 					label: function(ctx) {
-						let timelabel = ctx.dataset.labels[ctx.dataIndex];
 						return [
-                			ctx.dataset.label + ': ' + timelabel,
-                			'Uses data from: ' + ctx.parsed.x, 
-                			'Provides data to: ' + ctx.parsed.y
+                			ctx.dataset.label,
+                			'Year: ' + ctx.parsed.x, 
+                			'Residual: ' + ctx.parsed.y
                 		]
 					}
 				}
@@ -227,12 +221,9 @@ sub drawChart {
 							dataset.hidden = newVal
 						}
 					});
-					legend.chart.update('none');
+					legend.chart.update();
 				},
 				labels: {
-					font: {
-						size: 18
-					},
 					filter: (legendItem, chartData) => {
 						let entries = chartData.datasets.map(e => e.label);
 						return entries.indexOf(legendItem.text) === legendItem.datasetIndex;
@@ -245,8 +236,8 @@ sub drawChart {
 		  x: {
 			 type: '$x_scale',
 			 position: 'bottom',
-			 min: 0,
-			 max: 200,
+			 min: 1986,
+			 max: 2023,
 			 title: {
 				text: '$xaxis_label',
 				display: 'true',
@@ -259,8 +250,6 @@ sub drawChart {
 		  y: {
 			 type: 'linear',
 			 position: 'left',
-			 suggestedMin: 0, 
-			 max: 200,
 			 title: {
 				text: '$yaxis_label',
 				display: 'true',
@@ -337,3 +326,4 @@ sub print_tail {
 EOF
 
 }
+
