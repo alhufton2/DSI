@@ -31,9 +31,10 @@ print <<EOF;
 	The lines represent the progression of the DSI provision and use values for each country from 1986 to 2022.</p>
 </div>
 <div class="row">
-	<div class="column-main" style="width: 85%">
+	<div class="column-main" style="width: 5%; float:left"></div>
+	<div class="column-main" style="width: 80%; max-width: 725px">
 		<div class="results">
-			<canvas style="max-width: 800px; max-height: 800px;" id="myChart" aria-label="A chart showing the DSI provision and use histories of countries" role="img"></canvas>
+			<canvas style="max-width: 700px; max-height: 700px;" id="myChart" aria-label="A chart showing the DSI provision and use histories of countries" role="img"></canvas>
 		</div>
 	</div>
 	<div class="column-side" style="width: 15%">
