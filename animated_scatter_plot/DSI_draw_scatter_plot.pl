@@ -31,17 +31,17 @@ print <<EOF;
 	The lines represent the progression of the DSI provision and use values for each country from 1986 to 2022.</p>
 </div>
 <div class="row">
-	<div class="column-main">
+	<div class="column-main" style="width: 85%">
 		<div class="results">
 			<canvas style="max-width: 800px; max-height: 800px;" id="myChart" aria-label="A chart showing the DSI provision and use histories of countries" role="img"></canvas>
 		</div>
 	</div>
-	<div class="column-side">
-		<div class="chart-actions" style="padding: 80 0 0 0;">
-		  <button style="font-size: 18px" onclick="updateChart()">Replay</button></br>
-		  <button style="font-size: 18px" onclick="updateChartChangeSpeed(10)">Fast</button></br>
-		  <button style="font-size: 18px" onclick="updateChartChangeSpeed(100)">Normal</button></br>
-		  <button style="font-size: 18px" onclick="updateChartChangeSpeed(500)">Slow</button>
+	<div class="column-side" style="width: 15%">
+		<div class="chart-actions" style="padding: 80 0 0 0; font-size: 18px;">
+		  <div class="button_slide slide_down slide_normal" onclick="updateChart()"><span style='font-size:19px;'>&#8634;</span> Replay</div></br>
+		  <div class="button_slide slide_right slide_fast" onclick="updateChartChangeSpeed(10)">Fast</div></br>
+		  <div class="button_slide slide_right slide_normal" onclick="updateChartChangeSpeed(100)">Normal</div></br>
+		  <div class="button_slide slide_right slide_slow" onclick="updateChartChangeSpeed(500)">Slow</div>
 		</div>
 	</div>
 </div>
@@ -231,7 +231,7 @@ sub drawChart {
 				},
 				labels: {
 					font: {
-						size: 18
+						size: 17
 					},
 					filter: (legendItem, chartData) => {
 						let entries = chartData.datasets.map(e => e.label);
@@ -250,7 +250,7 @@ sub drawChart {
 			 title: {
 				text: '$xaxis_label',
 				display: 'true',
-				font: { size: 16 }
+				font: { size: 17 }
 			 },
 			 grid: { 
 				color: 'rgb(50,50,50)'
@@ -264,7 +264,7 @@ sub drawChart {
 			 title: {
 				text: '$yaxis_label',
 				display: 'true',
-				font: { size: 16 }
+				font: { size: 17 }
 			 },
 			 grid: { 
 				color: 'rgb(50,50,50)'
@@ -322,6 +322,56 @@ sub start_html {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.1/chart.min.js"></script>
 <link rel="stylesheet" href="https://alhufton.com/css/tool.css">
+<style>
+.button_slide {
+  color: #FFF;
+  border: 2px solid rgb(250, 250, 250);
+  border-radius: 0px;
+  padding: 5px 15px;
+  margin: 5px;
+  display: inline-block;
+  width: 90%;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button_slide:active {
+  color: #99ffe6;
+  border-color: #99ffe6;
+  transition-duration: 0.1s;
+}
+
+.slide_fast {
+  box-shadow: inset 0 0 0 0 #708090;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.slide_normal {
+  box-shadow: inset 0 0 0 0 #708090;
+  -webkit-transition: ease-out 1s;
+  -moz-transition: ease-out 1s;
+  transition: ease-out 1s;
+}
+
+.slide_slow {
+  box-shadow: inset 0 0 0 0 #708090;
+  -webkit-transition: ease-out 2s;
+  -moz-transition: ease-out 2s;
+  transition: ease-out 2s;
+}
+
+.slide_down:hover {
+  box-shadow: inset 0 100px 0 0 #708090;
+}
+
+.slide_right:hover {
+  box-shadow: inset 400px 0 0 0 #708090;
+}
+
+</style>
+
 </head>
 <body>
     

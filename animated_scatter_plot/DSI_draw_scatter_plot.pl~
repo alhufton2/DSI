@@ -24,20 +24,25 @@ my @dates;
 
 # Output a chart
 &start_html();
-print <<EOF; 
-<h2>Relationship between DSI provision and use across time</h2>
-<p>Recreation of chart 6.1, using the 15 August 2022 dataset version. 
-The lines represent the progression of the DSI provision and use values for each country from 1986 to 2022.</p>
-<div class="results">
-	<p><span style="background-color: rgba(252,174,30,0.9); color: white; padding: 2px;">BRICS</span>
-	<span style="background-color: rgba(153,255,51,0.9); color: black; padding: 2px;">G77</span>
-	<span style="background-color: rgba(0,51,204,0.9); color: white; padding: 2px;">OECD</span></p>
-	<canvas style="max-width: 800px; max-height: 800px;" id="myChart" aria-label="A chart showing the DSI provision and use histories of countries" role="img"></canvas>
-	<div class="chart-actions">
-	  <button style="font-size: 18px" onclick="updateChart()">Replay</button>
-	  <button style="font-size: 18px" onclick="updateChartChangeSpeed(10)">Fast</button>
-	  <button style="font-size: 18px" onclick="updateChartChangeSpeed(100)">Normal</button>
-	  <button style="font-size: 18px" onclick="updateChartChangeSpeed(500)">Slow</button>
+print <<EOF;
+<div class="header">
+	<h1>Relationship between DSI provision and use across time</h1>
+	<p>Recreation of chart 6.1, using the 15 August 2022 dataset version. 
+	The lines represent the progression of the DSI provision and use values for each country from 1986 to 2022.</p>
+</div>
+<div class="row">
+	<div class="column-main" style="width: 85%">
+		<div class="results">
+			<canvas style="max-width: 800px; max-height: 800px;" id="myChart" aria-label="A chart showing the DSI provision and use histories of countries" role="img"></canvas>
+		</div>
+	</div>
+	<div class="column-side" style="width: 15%">
+		<div class="chart-actions" style="padding: 80 0 0 0;">
+		  <button style="font-size: 40px" onclick="updateChart()">&#8635;</button></br>
+		  <button style="font-size: 18px" onclick="updateChartChangeSpeed(10)">>>>Fast</button></br>
+		  <button style="font-size: 18px" onclick="updateChartChangeSpeed(100)">>>Normal</button></br>
+		  <button style="font-size: 18px" onclick="updateChartChangeSpeed(500)">>Slow</button>
+		</div>
 	</div>
 </div>
 EOF
@@ -83,8 +88,8 @@ sub readProcessedData {
 		my $datetime = Time::Piece->strptime($row->{Date},'%Y-%m-%dT%T');
 		next if ($datetime->year == 1985); # skip the first year, since there is nothing happening
 		next unless ($datetime->mon == 1 || $datetime->mon == 6); # Only plot half-year increments
-		my $date_label = $datetime->ymd;
-		push @dates, "\"$date_label\"";
+		my $date_label = $datetime->monname . " " . $datetime->year;
+		push @dates, $date_label;
 		
 		# foreach element in row
 		foreach my $key ( keys %{$row} ) {
@@ -131,7 +136,11 @@ sub drawChart {
     foreach my $group (@groups_to_plot) {
     	foreach my $country ( keys %{$country_grps{$group}} ) {
     		if ( $data{$country}->{use} ) {
-    			   my $date_string = join(',', @dates);
+    			my $date_string;
+    			foreach my $date (@dates) {
+    				$date_string .= "\"$country ($date)\",";
+    			}
+    			chop $date_string;
 			
 				# start a new data series
 				$data_string .= "
@@ -183,10 +192,6 @@ sub drawChart {
 			duration: delayBetweenPoints,
 			from: NaN, // the point is initially skipped
 			delay(ctx) {
-			  if (ctx.type !== 'data' || ctx.xStarted) {
-				return 0;
-			  }
-			  ctx.xStarted = true;
 			  return ctx.index * delayBetweenPoints;
 			}
 		  },
@@ -196,10 +201,6 @@ sub drawChart {
 			duration: delayBetweenPoints,
 			from: NaN, // the point is initially skipped
 			delay(ctx) {
-			  if (ctx.type !== 'data' || ctx.yStarted) {
-				return 0;
-			  }
-			  ctx.yStarted = true;
 			  return ctx.index * delayBetweenPoints;
 			}
 		  }
@@ -226,9 +227,12 @@ sub drawChart {
 							dataset.hidden = newVal
 						}
 					});
-					legend.chart.update();
+					legend.chart.update('none');
 				},
 				labels: {
+					font: {
+						size: 17
+					},
 					filter: (legendItem, chartData) => {
 						let entries = chartData.datasets.map(e => e.label);
 						return entries.indexOf(legendItem.text) === legendItem.datasetIndex;
@@ -246,7 +250,7 @@ sub drawChart {
 			 title: {
 				text: '$xaxis_label',
 				display: 'true',
-				font: { size: 16 }
+				font: { size: 17 }
 			 },
 			 grid: { 
 				color: 'rgb(50,50,50)'
@@ -260,25 +264,11 @@ sub drawChart {
 			 title: {
 				text: '$yaxis_label',
 				display: 'true',
-				font: { size: 16 }
+				font: { size: 17 }
 			 },
 			 grid: { 
 				color: 'rgb(50,50,50)'
 			 }
-		  },
-		  y2: {
-		     type: 'linear',
-		     position: 'right',
-		     min: 1986,
-		     max: 2022,
-		     title: {
-				text: 'animation progress',
-				display: 'true',
-				font: { size: 16 }
-			 },
-		     grid: {
-		     	drawOnChartArea: false
-		     }
 		  }
 	    }
 	  }
