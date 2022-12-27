@@ -9,7 +9,7 @@ use Carp qw< croak >;
 use Time::Piece;
 
 ### Get input files from user ###
-my $usage = "$0 country_group_file data_table [scatter, animated_scatter, residuals, group_residuals]";
+my $usage = "$0 country_group_file data_table [scatter, residuals, group_residuals]";
 unless ( $ARGV[0] && $ARGV[1] && $ARGV[2] ) { die "\n$usage\n\n" }
 
 ### Config
@@ -29,10 +29,8 @@ my @dates;
 # Output a chart
 &start_html();
 
-if ( $ARGV[2] eq 'scatter' ) {
-	&drawChartScatter();
-} elsif ($ARGV[2] eq 'animated_scatter') {
-	&drawChartAnimatedScatter();
+if ($ARGV[2] eq 'scatter') {
+	&drawChart();
 } elsif ($ARGV[2] eq 'residuals') {
 	&drawChartResiduals();
 } elsif ($ARGV[2] eq 'group_residuals') {
@@ -102,171 +100,11 @@ sub readProcessedData {
 }
 
 # Writes a Chart.js javascript chart
-sub drawChartScatter {
+sub drawChart {
     
     # Set various formatting variables
+    my $x_scale = 'linear';
     my $x_min = 0;
-    my $x_max = 200;
-    my $y_min = 0;
-    my $y_max = 200;
-
-    # Axis labels
-    my $xaxis_label = "Uses data from x countries";
-    my $yaxis_label = "Provides data to y countries";
-    
-    # Define the colors that will be used for the data 
-    my @bordercolors = chart_colors(0.9);
-    my @bgcolors = chart_colors(0.6);
-    
-    # Create the data arrays
-    my $data_string = '';
-    my $k = 0; # color selector
-    my $color_max = @bordercolors;
-    
-    foreach my $group (@groups_to_plot) {
-    	foreach my $country ( keys %{$country_grps{$group}} ) {
-    		if ( $data{$country}->{use} ) {
-    			my $max = @{$data{$country}->{use}} - 1;
-    			
-    			my $date_label = $dates[$max]->monname . " " . $dates[$max]->year;
-    			my $date_string .= "\"$country ($date_label)\",";
-			
-				# start a new data series
-				$data_string .= "
-				{  label: '$group',
-				   labels: [$date_string],
-				   showLine: 'true',
-				   yAxisID: 'y',
-				   borderColor: '$bordercolors[$k]',
-				   backgroundColor: '$bgcolors[$k]',
-				   data: [";
-				
-				my $x = $data{$country}->{use}->[$max];
-				my $y = $data{$country}->{provide}->[$max];
-				$data_string .= "{x: $x, y: $y}";
-				$data_string .= "]}, "; #closes data
-			}
-		}
-		# increment color
-		++$k;
-		$k = 0 if $k == $color_max;
-    }
-    
-    ## print the Chart.js script ##
-    print <<EOF;
-<div class="header">
-	<h2>Relationship between DSI provision and use across time</h2>
-	<p>Recreation of chart 6.1, using the 15 August 2022 dataset version. 
-	DSI provision and use values for each country on $end_year.</p>
-</div>
-<div class="row">
-	<div class="column-main" style="width: 9%; float:left"></div>
-	<div class="column-main" style="width: 82%; max-width: 725px">
-		<div class="results">
-			<canvas style="max-width: 700px; max-height: 700px;" id="myChart" aria-label="A chart showing the DSI provision and use histories of countries" role="img"></canvas>
-		</div>
-	</div>
-	<div class="column-side" style="width: 9%; float:left"></div>
-</div>
-
-<script>
-	Chart.defaults.color = "rgb(250,250,250)";
-
-	const config = {
-	  type: 'scatter',
-	  data: {
-		  datasets: [$data_string]
-	  },
-	
-	  options: {
-		locale: 'en-US',
-		aspectRatio: 1,
-		layout: { padding: 10 },
-		plugins: {
-			tooltip: {
-				mode: 'nearest', 
-				callbacks: {
-					label: function(ctx) {
-						return [
-                			ctx.dataset.label + ': ' + ctx.dataset.labels[ctx.dataIndex],
-                			'Uses data from: ' + ctx.parsed.x, 
-                			'Provides data to: ' + ctx.parsed.y
-                		]
-					}
-				}
-			}, 
-			legend: {
-				onClick: (evt, legendItem, legend) => {
-					let newVal = !legendItem.hidden;
-					legend.chart.data.datasets.forEach(dataset => {
-						if (dataset.label === legendItem.text) {
-							dataset.hidden = newVal
-						}
-					});
-					legend.chart.update('none');
-				},
-				labels: {
-					font: {
-						size: 17
-					},
-					filter: (legendItem, chartData) => {
-						let entries = chartData.datasets.map(e => e.label);
-						return entries.indexOf(legendItem.text) === legendItem.datasetIndex;
-					}
-				}
-			},
-		},
-		elements: { point: { hitRadius: 10, radius: 4 } },
-		scales: {
-		  x: {
-			 type: 'linear',
-			 position: 'bottom',
-			 min: $x_min,
-			 max: $x_max,
-			 title: {
-				text: '$xaxis_label',
-				display: 'true',
-				font: { size: 17 }
-			 },
-			 grid: { 
-				color: 'rgb(50,50,50)'
-			 }
-		  },
-		  y: {
-			 type: 'linear',
-			 position: 'left',
-			 suggestedMin: $y_min, 
-			 max: $y_max,
-			 title: {
-				text: '$yaxis_label',
-				display: 'true',
-				font: { size: 17 }
-			 },
-			 grid: { 
-				color: 'rgb(50,50,50)'
-			 }
-		  }
-	    }
-	  }
-	};
-	
-	let myChart = new Chart(
-		document.getElementById('myChart'),
-		config
-	);
-	
-</script>
-EOF
-}
-
-# Writes a Chart.js javascript chart
-sub drawChartAnimatedScatter {
-    
-    # Set various formatting variables
-    my $x_min = 0;
-    my $x_max = 200;
-    my $y_min = 0;
-    my $y_max = 200;
 
     # Axis labels
     my $xaxis_label = "Uses data from x countries";
@@ -286,8 +124,7 @@ sub drawChartAnimatedScatter {
     		if ( $data{$country}->{use} ) {
     			my $date_string;
     			foreach my $date (@dates) {
-    				my $date_label = $date->monname . " " . $date->year;
-    				$date_string .= "\"$country ($date_label)\",";
+    				$date_string .= "\"$country ($date)\",";
     			}
     			chop $date_string;
 			
@@ -413,10 +250,10 @@ sub drawChartAnimatedScatter {
 		elements: { point: { hitRadius: 10, radius: 0 } },
 		scales: {
 		  x: {
-			 type: 'linear',
+			 type: '$x_scale',
 			 position: 'bottom',
-			 min: $x_min,
-			 max: $x_max,
+			 min: 0,
+			 max: 200,
 			 title: {
 				text: '$xaxis_label',
 				display: 'true',
@@ -429,8 +266,8 @@ sub drawChartAnimatedScatter {
 		  y: {
 			 type: 'linear',
 			 position: 'left',
-			 suggestedMin: $y_min, 
-			 max: $y_max,
+			 suggestedMin: 0, 
+			 max: 200,
 			 title: {
 				text: '$yaxis_label',
 				display: 'true',
@@ -696,6 +533,7 @@ sub drawChartResidualsGroups {
     # Set various formatting variables
     my $x_min = $start_year;
     my $x_max = $end_year + 1;
+    
     my $y_min = -80;
     my $y_max = 40;
 
