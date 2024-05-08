@@ -75,7 +75,7 @@ sub readProcessedData {
 		my $datetime = Time::Piece->strptime($row->{Date},'%Y-%m-%dT%T');
 		next if ($datetime->year < $start_year || $datetime->year > $end_year);
 		if ( $six_month ) {
-			next unless ($datetime->mon == 1 || $datetime->mon == 6); # Only plot half-year increments
+			next unless ($datetime->mon == 1 || $datetime->mon == 7); # Only plot half-year increments
 		}
 		push @dates, $datetime;
 		
